@@ -170,3 +170,15 @@
 2024-09-17T19:57:56+03:00 [Error][app] failed to start server: listen tcp 127.0.0.1:8080: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
 2024-09-17T19:58:04+03:00 [Info][app] Shutting down the server
 2024-09-17T19:58:08+03:00 [Info][app] Shutting down the server
+2024-09-17T21:27:48+03:00 [Info][app] Config loaded successfully
+2024-09-17T21:27:48+03:00 [Info][app] Starting the application
+2024-09-17T21:27:48+03:00 [Info][app] Server started successfully
+2024-09-17T21:27:49+03:00 [Info][app] Shutting down the server
+2024-09-17T21:31:16+03:00 [Info][app] Config loaded successfully
+2024-09-17T21:31:16+03:00 [Info][app] Starting the application
+2024-09-17T21:31:16+03:00 [Info][app] Server started successfully
+2024-09-17T21:31:21+03:00 [Info][app] Shutting down the server
+2024-09-17T21:31:58+03:00 [Info][app] Config loaded successfully
+2024-09-17T21:31:58+03:00 [Info][app] Starting the application
+2024-09-17T21:31:58+03:00 [Info][app] Server started successfully
+2024-09-17T21:32:07+03:00 [Info][app] Shutting down the server

@@ -34,6 +34,9 @@ func main() {
 
 	//bookings := booking.NewDB(storage)
 	//users := user.NewDB(storage)
+	//
+	//hash, err := bcrypt.GenerateFromPassword([]byte{1, 2, 3, 4}, bcrypt.DefaultCost)
+	//users.Create(context.TODO(), user.New("need", hash))
 
 	router := mux.NewRouter()
 	signalChan := make(chan os.Signal, 1)
@@ -59,11 +62,11 @@ func main() {
 	logger.Info("Shutting down the server")
 
 	//users.Create(context.TODO(), user.User{
-	//	"",
-	//	"John",
-	//	"Doe",
-	//	time.Now(),
-	//	time.Now(),
+	//	//	"",
+	//	//	"John",
+	//	//	"Doe",
+	//	//	time.Now(),
+	//	//	time.Now(),
 	//})
 
 	//tempUser := user.New(
