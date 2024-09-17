@@ -3,10 +3,13 @@ package main
 import (
 	"TimeBookingAPI/iternal/config"
 	"TimeBookingAPI/iternal/storage/PostgreSQL"
-	"TimeBookingAPI/iternal/user"
 	"context"
 	"github.com/go-ozzo/ozzo-log"
+	"github.com/gorilla/mux"
+	"net/http"
 	"os"
+	"os/signal"
+	"syscall"
 )
 
 func main() {
@@ -30,8 +33,31 @@ func main() {
 		os.Exit(1)
 	}
 
+	router := mux.NewRouter()
+	signalChan := make(chan os.Signal, 1)
+	signal.Notify(signalChan, os.Interrupt, syscall.SIGINT, syscall.SIGTERM)
+
+	server := &http.Server{
+		Addr:         config.Address,
+		Handler:      router,
+		ReadTimeout:  config.Timeout,
+		WriteTimeout: config.Timeout,
+	}
+
+	go func() {
+		if err := server.ListenAndServe(); err != nil {
+			logger.Error("failed to start server: %s", err.Error())
+		}
+	}()
+
+	_ = storage
+	logger.Info("Server started successfully")
+	<-signalChan
+
+	logger.Info("Shutting down the server")
+
 	//bookings := booking.NewDB(storage)
-	users := user.NewDB(storage)
+	//users := user.NewDB(storage)
 
 	//users.Create(context.TODO(), user.User{
 	//	"",
@@ -41,16 +67,16 @@ func main() {
 	//	time.Now(),
 	//})
 
-	tempUser := user.New(
-		"ANTONina",
-		"asdf",
-	)
-
-	err = users.Create(context.TODO(), tempUser)
-
-	if err != nil {
-		logger.Error(err.Error())
-	}
+	//tempUser := user.New(
+	//	"ANTONina",
+	//	"asdf",
+	//)
+	//
+	//err = users.Create(context.TODO(), tempUser)
+	//
+	//if err != nil {
+	//	logger.Error(err.Error())
+	//}
 
 	//err = users.Delete(context.TODO(), bookings, "8f1b198a-11a5-44dd-bc53-b30f6c4f7b3f")
 	//err = bookings.Create(context.TODO(), &booking.Booking{

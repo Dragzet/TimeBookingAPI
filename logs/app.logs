@@ -134,3 +134,30 @@
 2024-09-17T17:27:47+03:00 [Error][app] iternal/user/db.go:  create booking: ERROR: duplicate key value violates unique constraint "users_username_key" (SQLSTATE 23505)
 2024-09-17T17:28:06+03:00 [Info][app] Config loaded successfully
 2024-09-17T17:28:06+03:00 [Info][app] Starting the application
+2024-09-17T19:39:04+03:00 [Info][app] Config loaded successfully
+2024-09-17T19:39:04+03:00 [Info][app] Starting the application
+2024-09-17T19:39:04+03:00 [Info][app] Server started successfully
+2024-09-17T19:39:21+03:00 [Info][app] Config loaded successfully
+2024-09-17T19:39:21+03:00 [Info][app] Starting the application
+2024-09-17T19:39:21+03:00 [Info][app] Server started successfully
+2024-09-17T19:43:05+03:00 [Info][app] Config loaded successfully
+2024-09-17T19:43:05+03:00 [Info][app] Starting the application
+2024-09-17T19:43:05+03:00 [Info][app] Server started successfully
+2024-09-17T19:43:17+03:00 [Info][app] Shutting down the server
+2024-09-17T19:43:17+03:00 [Info][app] Config loaded successfully
+2024-09-17T19:43:17+03:00 [Info][app] Starting the application
+2024-09-17T19:43:17+03:00 [Info][app] Server started successfully
+2024-09-17T19:44:26+03:00 [Info][app] Shutting down the server
+2024-09-17T19:44:38+03:00 [Info][app] Config loaded successfully
+2024-09-17T19:44:38+03:00 [Info][app] Starting the application
+2024-09-17T19:44:38+03:00 [Info][app] Server started successfully
+2024-09-17T19:45:35+03:00 [Error][app] failed to start server: http: Server closed
+2024-09-17T19:45:35+03:00 [Info][app] Shutting down the server
+2024-09-17T19:48:33+03:00 [Info][app] Config loaded successfully
+2024-09-17T19:48:33+03:00 [Info][app] Starting the application
+2024-09-17T19:48:33+03:00 [Info][app] Server started successfully
+2024-09-17T19:48:41+03:00 [Info][app] Shutting down the server
+2024-09-17T19:52:55+03:00 [Info][app] Config loaded successfully
+2024-09-17T19:52:55+03:00 [Info][app] Starting the application
+2024-09-17T19:52:55+03:00 [Info][app] Server started successfully
+2024-09-17T19:52:57+03:00 [Info][app] Shutting down the server

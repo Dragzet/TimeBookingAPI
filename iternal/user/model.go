@@ -7,12 +7,12 @@ import (
 type User struct {
 	ID        string
 	Username  string
-	Password  string
+	Password  []byte
 	CreatedAt time.Time
 	UpdatedAt time.Time
 }
 
-func New(username, password string) *User {
+func New(username string, password []byte) *User {
 	return &User{
 		Username:  username,
 		Password:  password,
