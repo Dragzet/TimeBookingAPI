@@ -1,0 +1,136 @@
+2024-09-17T11:33:53+03:00 [Info][app] Config loaded successfully
+2024-09-17T11:33:53+03:00 [Info][app] Starting the application
+2024-09-17T11:51:04+03:00 [Info][app] Config loaded successfully
+2024-09-17T11:51:04+03:00 [Info][app] Starting the application
+2024-09-17T11:51:04+03:00 [Error][app] storage.go: failed to open the database
+2024-09-17T11:58:19+03:00 [Info][app] Config loaded successfully
+2024-09-17T11:58:19+03:00 [Info][app] Starting the application
+2024-09-17T11:58:19+03:00 [Error][app] storage.go: failed to prepare the table statement
+2024-09-17T11:58:37+03:00 [Info][app] Config loaded successfully
+2024-09-17T11:58:37+03:00 [Info][app] Starting the application
+2024-09-17T11:58:37+03:00 [Error][app] storage.go: failed to prepare the table statement
+2024-09-17T12:01:04+03:00 [Info][app] Config loaded successfully
+2024-09-17T12:01:04+03:00 [Info][app] Starting the application
+2024-09-17T12:01:04+03:00 [Error][app] %!w(string=storage.go: ) failed to prepare the table statement - %!w(string=missing "=" after "storage/storage.db" in connection info string")
+2024-09-17T12:01:12+03:00 [Info][app] Config loaded successfully
+2024-09-17T12:01:12+03:00 [Info][app] Starting the application
+2024-09-17T12:01:12+03:00 [Error][app] storage.go:  failed to prepare the table statement - %!w(string=missing "=" after "storage/storage.db" in connection info string")
+2024-09-17T12:01:20+03:00 [Info][app] Config loaded successfully
+2024-09-17T12:01:20+03:00 [Info][app] Starting the application
+2024-09-17T12:01:20+03:00 [Error][app] storage.go:  failed to prepare the table statement - missing "=" after "storage/storage.db" in connection info string"
+2024-09-17T12:03:00+03:00 [Info][app] Config loaded successfully
+2024-09-17T12:03:00+03:00 [Info][app] Starting the application
+2024-09-17T12:03:00+03:00 [Error][app] storage.go:  failed to prepare the table statement - missing "=" after "storage/storage.db" in connection info string"
+2024-09-17T12:03:40+03:00 [Info][app] Config loaded successfully
+2024-09-17T12:03:40+03:00 [Info][app] Starting the application
+2024-09-17T12:03:40+03:00 [Error][app] storage.go:  failed to prepare the table statement - missing "=" after "./storage/storage.db" in connection info string"
+2024-09-17T12:04:36+03:00 [Info][app] Config loaded successfully
+2024-09-17T12:04:36+03:00 [Info][app] Starting the application
+2024-09-17T12:04:36+03:00 [Error][app] storage.go:  failed to prepare the table statement - missing "=" after "./storage/storage.db" in connection info string"
+2024-09-17T12:06:27+03:00 [Info][app] Config loaded successfully
+2024-09-17T12:06:27+03:00 [Info][app] Starting the application
+2024-09-17T12:16:27+03:00 [Info][app] Config loaded successfully
+2024-09-17T12:16:27+03:00 [Info][app] Starting the application
+2024-09-17T12:19:24+03:00 [Info][app] Config loaded successfully
+2024-09-17T12:19:24+03:00 [Info][app] Starting the application
+2024-09-17T12:30:19+03:00 [Info][app] Config loaded successfully
+2024-09-17T12:30:19+03:00 [Info][app] Starting the application
+2024-09-17T12:52:37+03:00 [Info][app] Config loaded successfully
+2024-09-17T12:52:37+03:00 [Info][app] Starting the application
+2024-09-17T12:54:39+03:00 [Info][app] Config loaded successfully
+2024-09-17T12:54:39+03:00 [Info][app] Starting the application
+2024-09-17T12:55:27+03:00 [Info][app] Config loaded successfully
+2024-09-17T12:55:27+03:00 [Info][app] Starting the application
+2024-09-17T12:57:38+03:00 [Info][app] Config loaded successfully
+2024-09-17T12:57:38+03:00 [Info][app] Starting the application
+2024-09-17T12:58:21+03:00 [Info][app] Config loaded successfully
+2024-09-17T12:58:21+03:00 [Info][app] Starting the application
+2024-09-17T14:50:56+03:00 [Info][app] Config loaded successfully
+2024-09-17T14:50:56+03:00 [Info][app] Starting the application
+2024-09-17T14:51:29+03:00 [Info][app] Config loaded successfully
+2024-09-17T14:51:29+03:00 [Info][app] Starting the application
+2024-09-17T14:51:29+03:00 [Error][app] iternal/booking/PostgreSQL/db.go:  create booking: ERROR: invalid input syntax for type uuid: "123" (SQLSTATE 22P02)
+2024-09-17T14:53:01+03:00 [Info][app] Config loaded successfully
+2024-09-17T14:53:01+03:00 [Info][app] Starting the application
+2024-09-17T15:00:56+03:00 [Info][app] Config loaded successfully
+2024-09-17T15:00:56+03:00 [Info][app] Starting the application
+2024-09-17T15:02:14+03:00 [Info][app] Config loaded successfully
+2024-09-17T15:02:14+03:00 [Info][app] Starting the application
+2024-09-17T15:02:35+03:00 [Info][app] Config loaded successfully
+2024-09-17T15:02:35+03:00 [Info][app] Starting the application
+2024-09-17T15:02:49+03:00 [Info][app] Config loaded successfully
+2024-09-17T15:02:49+03:00 [Info][app] Starting the application
+2024-09-17T15:02:49+03:00 [Error][app] iternal/booking/PostgreSQL/db.go:  find booking: no rows in result set
+2024-09-17T15:05:24+03:00 [Info][app] Config loaded successfully
+2024-09-17T15:05:24+03:00 [Info][app] Starting the application
+2024-09-17T15:05:28+03:00 [Info][app] Config loaded successfully
+2024-09-17T15:05:28+03:00 [Info][app] Starting the application
+2024-09-17T15:07:35+03:00 [Info][app] Config loaded successfully
+2024-09-17T15:07:35+03:00 [Info][app] Starting the application
+2024-09-17T15:08:15+03:00 [Info][app] Config loaded successfully
+2024-09-17T15:08:15+03:00 [Info][app] Starting the application
+2024-09-17T15:11:31+03:00 [Info][app] Config loaded successfully
+2024-09-17T15:11:31+03:00 [Info][app] Starting the application
+2024-09-17T15:12:06+03:00 [Info][app] Config loaded successfully
+2024-09-17T15:12:06+03:00 [Info][app] Starting the application
+2024-09-17T16:34:26+03:00 [Info][app] Config loaded successfully
+2024-09-17T16:34:26+03:00 [Info][app] Starting the application
+2024-09-17T16:36:52+03:00 [Info][app] Config loaded successfully
+2024-09-17T16:36:52+03:00 [Info][app] Starting the application
+2024-09-17T16:36:52+03:00 [Error][app] iternal/user/db.go:  delete user: ERROR: update or delete on table "users" violates foreign key constraint "bookings_user_id_fkey" on table "bookings" (SQLSTATE 23503)
+2024-09-17T16:42:28+03:00 [Info][app] Config loaded successfully
+2024-09-17T16:42:28+03:00 [Info][app] Starting the application
+2024-09-17T16:46:07+03:00 [Info][app] Config loaded successfully
+2024-09-17T16:46:07+03:00 [Info][app] Starting the application
+2024-09-17T16:51:38+03:00 [Info][app] Config loaded successfully
+2024-09-17T16:51:38+03:00 [Info][app] Starting the application
+2024-09-17T16:53:07+03:00 [Info][app] Config loaded successfully
+2024-09-17T16:53:07+03:00 [Info][app] Starting the application
+2024-09-17T16:53:58+03:00 [Info][app] Config loaded successfully
+2024-09-17T16:53:58+03:00 [Info][app] Starting the application
+2024-09-17T16:54:48+03:00 [Info][app] Config loaded successfully
+2024-09-17T16:54:48+03:00 [Info][app] Starting the application
+2024-09-17T16:56:37+03:00 [Info][app] Config loaded successfully
+2024-09-17T16:56:37+03:00 [Info][app] Starting the application
+2024-09-17T16:57:11+03:00 [Info][app] Config loaded successfully
+2024-09-17T16:57:11+03:00 [Info][app] Starting the application
+2024-09-17T16:57:11+03:00 [Error][app] iternal/user/db.go:  update user: ERROR: duplicate key value violates unique constraint "users_username_key" (SQLSTATE 23505)
+2024-09-17T16:57:37+03:00 [Info][app] Config loaded successfully
+2024-09-17T16:57:37+03:00 [Info][app] Starting the application
+2024-09-17T16:59:07+03:00 [Info][app] Config loaded successfully
+2024-09-17T16:59:07+03:00 [Info][app] Starting the application
+2024-09-17T16:59:07+03:00 [Error][app] iternal/user/db.go:  update user: ERROR: column "update_at" of relation "users" does not exist (SQLSTATE 42703)
+2024-09-17T16:59:30+03:00 [Info][app] Config loaded successfully
+2024-09-17T16:59:30+03:00 [Info][app] Starting the application
+2024-09-17T16:59:53+03:00 [Info][app] Config loaded successfully
+2024-09-17T16:59:53+03:00 [Info][app] Starting the application
+2024-09-17T17:00:00+03:00 [Info][app] Config loaded successfully
+2024-09-17T17:00:00+03:00 [Info][app] Starting the application
+2024-09-17T17:02:08+03:00 [Info][app] Config loaded successfully
+2024-09-17T17:02:08+03:00 [Info][app] Starting the application
+2024-09-17T17:02:50+03:00 [Info][app] Config loaded successfully
+2024-09-17T17:02:50+03:00 [Info][app] Starting the application
+2024-09-17T17:03:03+03:00 [Info][app] Config loaded successfully
+2024-09-17T17:03:03+03:00 [Info][app] Starting the application
+2024-09-17T17:03:28+03:00 [Info][app] Config loaded successfully
+2024-09-17T17:03:28+03:00 [Info][app] Starting the application
+2024-09-17T17:03:44+03:00 [Info][app] Config loaded successfully
+2024-09-17T17:03:44+03:00 [Info][app] Starting the application
+2024-09-17T17:04:31+03:00 [Info][app] Config loaded successfully
+2024-09-17T17:04:31+03:00 [Info][app] Starting the application
+2024-09-17T17:05:29+03:00 [Info][app] Config loaded successfully
+2024-09-17T17:05:29+03:00 [Info][app] Starting the application
+2024-09-17T17:05:29+03:00 [Error][app] iternal/user/db.go:  update user: ERROR: syntax error at or near "=" (SQLSTATE 42601)
+2024-09-17T17:05:55+03:00 [Info][app] Config loaded successfully
+2024-09-17T17:05:55+03:00 [Info][app] Starting the application
+2024-09-17T17:25:58+03:00 [Info][app] Config loaded successfully
+2024-09-17T17:25:58+03:00 [Info][app] Starting the application
+2024-09-17T17:25:58+03:00 [Error][app] iternal/user/db.go:  update user: ERROR: invalid input syntax for type uuid: "" (SQLSTATE 22P02)
+2024-09-17T17:25:58+03:00 [Error][app] iternal/user/db.go:  update user: ERROR: invalid input syntax for type uuid: "" (SQLSTATE 22P02)
+2024-09-17T17:26:42+03:00 [Info][app] Config loaded successfully
+2024-09-17T17:26:42+03:00 [Info][app] Starting the application
+2024-09-17T17:27:47+03:00 [Info][app] Config loaded successfully
+2024-09-17T17:27:47+03:00 [Info][app] Starting the application
+2024-09-17T17:27:47+03:00 [Error][app] iternal/user/db.go:  create booking: ERROR: duplicate key value violates unique constraint "users_username_key" (SQLSTATE 23505)
+2024-09-17T17:28:06+03:00 [Info][app] Config loaded successfully
+2024-09-17T17:28:06+03:00 [Info][app] Starting the application
