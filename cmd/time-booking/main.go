@@ -13,35 +13,37 @@ import (
 )
 
 func main() {
-	config, err := config.LoadConfig()
+	cfg, err := config.LoadConfig()
 
 	if err != nil {
-		panic(err) // No point in continuing if we can't load the config
+		panic(err) // No point in continuing if we can't load the cfg
 	}
 
-	logger := setupLogger(config.LogsPath)
+	logger := setupLogger(cfg.LogsPath)
 	logger.Open()
 	defer logger.Close()
 
 	logger.Info("Config loaded successfully")
 	logger.Info("Starting the application")
 
-	storage, err := PostgreSQL.NewStorage(context.TODO(), config.StoragePath)
-
+	storage, err := PostgreSQL.NewStorage(context.TODO(), cfg.StoragePath)
 	if err != nil {
 		logger.Error(err.Error())
 		os.Exit(1)
 	}
+
+	//bookings := booking.NewDB(storage)
+	//users := user.NewDB(storage)
 
 	router := mux.NewRouter()
 	signalChan := make(chan os.Signal, 1)
 	signal.Notify(signalChan, os.Interrupt, syscall.SIGINT, syscall.SIGTERM)
 
 	server := &http.Server{
-		Addr:         config.Address,
+		Addr:         cfg.Address,
 		Handler:      router,
-		ReadTimeout:  config.Timeout,
-		WriteTimeout: config.Timeout,
+		ReadTimeout:  cfg.Timeout,
+		WriteTimeout: cfg.Timeout,
 	}
 
 	go func() {
@@ -55,9 +57,6 @@ func main() {
 	<-signalChan
 
 	logger.Info("Shutting down the server")
-
-	//bookings := booking.NewDB(storage)
-	//users := user.NewDB(storage)
 
 	//users.Create(context.TODO(), user.User{
 	//	"",
