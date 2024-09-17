@@ -1,7 +1,7 @@
 package user
 
 import (
-	"TimeBookingAPI/iternal/booking"
+	"TimeBookingAPI/internal/booking"
 	"context"
 )
 

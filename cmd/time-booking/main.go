@@ -1,8 +1,8 @@
 package main
 
 import (
-	"TimeBookingAPI/iternal/config"
-	"TimeBookingAPI/iternal/storage/PostgreSQL"
+	"TimeBookingAPI/internal/config"
+	"TimeBookingAPI/internal/storage/PostgreSQL"
 	"context"
 	"github.com/go-ozzo/ozzo-log"
 	"github.com/gorilla/mux"

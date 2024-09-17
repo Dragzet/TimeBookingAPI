@@ -1,12 +1,12 @@
 package booking
 
 import (
-	"TimeBookingAPI/iternal/storage/PostgreSQL"
+	"TimeBookingAPI/internal/storage/PostgreSQL"
 	"context"
 	"fmt"
 )
 
-const errorStatement = "iternal/booking/db.go: "
+const errorStatement = "internal/booking/db.go: "
 
 type db struct {
 	client PostgreSQL.Client

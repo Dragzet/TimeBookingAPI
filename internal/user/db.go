@@ -1,13 +1,13 @@
 package user
 
 import (
-	"TimeBookingAPI/iternal/booking"
-	"TimeBookingAPI/iternal/storage/PostgreSQL"
+	"TimeBookingAPI/internal/booking"
+	"TimeBookingAPI/internal/storage/PostgreSQL"
 	"context"
 	"fmt"
 )
 
-const errorStatement = "iternal/user/db.go: "
+const errorStatement = "internal/user/db.go: "
 
 type db struct {
 	client PostgreSQL.Client
