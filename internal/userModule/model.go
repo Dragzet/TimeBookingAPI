@@ -1,10 +1,10 @@
-package user
+package userModule
 
 import (
 	"time"
 )
 
-type User struct {
+type UserModel struct {
 	ID        string
 	Username  string
 	Password  []byte
@@ -12,8 +12,8 @@ type User struct {
 	UpdatedAt time.Time
 }
 
-func New(username string, password []byte) *User {
-	return &User{
+func New(username string, password []byte) *UserModel {
+	return &UserModel{
 		Username:  username,
 		Password:  password,
 		CreatedAt: time.Now(),

@@ -32,11 +32,11 @@ func main() {
 		os.Exit(1)
 	}
 
-	//bookings := booking.NewDB(storage)
-	//users := user.NewDB(storage)
+	//bookings := bookingModule.NewDB(storage)
+	//users := userModule.NewDB(storage)
 	//
 	//hash, err := bcrypt.GenerateFromPassword([]byte{1, 2, 3, 4}, bcrypt.DefaultCost)
-	//users.Create(context.TODO(), user.New("need", hash))
+	//users.Create(context.TODO(), userModule.New("need", hash))
 
 	router := mux.NewRouter()
 	signalChan := make(chan os.Signal, 1)
@@ -61,7 +61,7 @@ func main() {
 
 	logger.Info("Shutting down the server")
 
-	//users.Create(context.TODO(), user.User{
+	//users.Create(context.TODO(), userModule.User{
 	//	//	"",
 	//	//	"John",
 	//	//	"Doe",
@@ -69,7 +69,7 @@ func main() {
 	//	//	time.Now(),
 	//})
 
-	//tempUser := user.New(
+	//tempUser := userModule.New(
 	//	"ANTONina",
 	//	"asdf",
 	//)
@@ -81,7 +81,7 @@ func main() {
 	//}
 
 	//err = users.Delete(context.TODO(), bookings, "8f1b198a-11a5-44dd-bc53-b30f6c4f7b3f")
-	//err = bookings.Create(context.TODO(), &booking.Booking{
+	//err = bookings.Create(context.TODO(), &bookingModule.Booking{
 	//	"",
 	//	"8f1b198a-11a5-44dd-bc53-b30f6c4f7b3f",
 	//	time.Now(),
@@ -90,7 +90,7 @@ func main() {
 
 	//bookingsArr, err := bookings.FindAll(context.TODO(), "8f1b198a-11a5-44dd-bc53-b30f6c4f7b3f")
 
-	//booking, err := bookings.Find(context.TODO(), "f3a0ddc0-2d0f-42d0-b939-0f46926cc44f")
+	//bookingModule, err := bookings.Find(context.TODO(), "f3a0ddc0-2d0f-42d0-b939-0f46926cc44f")
 
 	//err = bookings.Delete(context.TODO(), "f3a0ddc0-290f-42d0-b939-0f46926cc44f")
 
