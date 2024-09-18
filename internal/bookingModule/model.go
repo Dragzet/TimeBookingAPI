@@ -3,10 +3,10 @@ package bookingModule
 import "time"
 
 type BookingModel struct {
-	ID        string
-	UserID    string
-	StartTime time.Time
-	EndTime   time.Time
+	ID        string    `json:"id"`
+	UserID    string    `json:"userID"`
+	StartTime time.Time `json:"startTime"`
+	EndTime   time.Time `json:"endTime"`
 }
 
 func New(userID string, delta int) *BookingModel {

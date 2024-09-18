@@ -25,5 +25,6 @@ CREATE TRIGGER set_updated_at
     BEFORE UPDATE OF username, password ON users
     FOR EACH ROW
     EXECUTE FUNCTION update_timestamp();
-
+show TIME ZONE ;
 SET timezone = 'Europe/Moscow';
+UPDATE  users SET password = '12345s6' WHERE username = 'SENYA';

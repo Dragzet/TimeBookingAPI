@@ -5,17 +5,15 @@ import (
 )
 
 type UserModel struct {
-	ID        string
-	Username  string
-	Password  []byte
-	CreatedAt time.Time
-	UpdatedAt time.Time
+	ID        string    `json:"ID"`
+	Username  string    `json:"username"`
+	Password  string    `json:"password"`
+	CreatedAt time.Time `json:"createdAt"`
+	UpdatedAt time.Time `json:"updatedAt"`
 }
 
-func New(username string, password []byte) *UserModel {
+func New() *UserModel {
 	return &UserModel{
-		Username:  username,
-		Password:  password,
 		CreatedAt: time.Now(),
 		UpdatedAt: time.Now(),
 	}

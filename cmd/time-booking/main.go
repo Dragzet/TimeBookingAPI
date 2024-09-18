@@ -1,8 +1,11 @@
 package main
 
 import (
+	"TimeBookingAPI/internal/bookingModule"
 	"TimeBookingAPI/internal/config"
+	"TimeBookingAPI/internal/http-server/handlers"
 	"TimeBookingAPI/internal/storage/PostgreSQL"
+	"TimeBookingAPI/internal/userModule"
 	"context"
 	"github.com/go-ozzo/ozzo-log"
 	"github.com/gorilla/mux"
@@ -32,19 +35,20 @@ func main() {
 		os.Exit(1)
 	}
 
-	//bookings := bookingModule.NewDB(storage)
-	//users := userModule.NewDB(storage)
+	bookings := bookingModule.NewDB(storage)
+	users := userModule.NewDB(storage)
+	router := mux.NewRouter()
+	handler := handlers.NewHandler(router, bookings, users)
 	//
 	//hash, err := bcrypt.GenerateFromPassword([]byte{1, 2, 3, 4}, bcrypt.DefaultCost)
 	//users.Create(context.TODO(), userModule.New("need", hash))
 
-	router := mux.NewRouter()
 	signalChan := make(chan os.Signal, 1)
 	signal.Notify(signalChan, os.Interrupt, syscall.SIGINT, syscall.SIGTERM)
 
 	server := &http.Server{
 		Addr:         cfg.Address,
-		Handler:      router,
+		Handler:      handler,
 		ReadTimeout:  cfg.Timeout,
 		WriteTimeout: cfg.Timeout,
 	}
