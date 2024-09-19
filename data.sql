@@ -8,7 +8,7 @@ CREATE TABLE users(
 
 CREATE TABLE bookings(
                          id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-                         user_id UUID REFERENCES users(id),
+                         username TEXT REFERENCES users(username),
                          start_time TIMESTAMP NOT NULL,
                          end_time TIMESTAMP NOT NULL
 );
@@ -28,3 +28,5 @@ CREATE TRIGGER set_updated_at
 show TIME ZONE ;
 SET timezone = 'Europe/Moscow';
 UPDATE  users SET password = '12345s6' WHERE username = 'SENYA';
+
+DROP TABLE bookings

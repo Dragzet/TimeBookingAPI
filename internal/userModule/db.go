@@ -5,6 +5,7 @@ import (
 	"TimeBookingAPI/internal/storage/PostgreSQL"
 	"context"
 	"fmt"
+	"golang.org/x/crypto/bcrypt"
 )
 
 const errorStatement = "internal/userModule/db.go: "
@@ -13,7 +14,7 @@ type db struct {
 	client PostgreSQL.Client
 }
 
-func (d db) Create(ctx context.Context, item *UserModel) error {
+func (d db) Create(ctx context.Context, user *UserModel) error {
 	stmt := `
 	INSERT INTO users
 		(username, password, created_at, updated_at)
@@ -22,8 +23,13 @@ func (d db) Create(ctx context.Context, item *UserModel) error {
 	RETURNING id
 	`
 
-	if err := d.client.QueryRow(ctx, stmt, item.Username, item.Password, item.CreatedAt, item.UpdatedAt).Scan(&item.ID); err != nil {
-		return fmt.Errorf("%s create bookingModule: %s", errorStatement, err.Error())
+	hash, err := bcrypt.GenerateFromPassword([]byte(user.Password), bcrypt.DefaultCost)
+	if err != nil {
+		return fmt.Errorf("%s create hashing userModule: %s", errorStatement, err.Error())
+	}
+
+	if err := d.client.QueryRow(ctx, stmt, user.Username, hash, user.CreatedAt, user.UpdatedAt).Scan(&user.ID); err != nil {
+		return fmt.Errorf("%s create userModule: %s", errorStatement, err.Error())
 	}
 	return nil
 }
@@ -36,7 +42,7 @@ func (d db) Find(ctx context.Context, username string) (*UserModel, error) {
 
 	err := d.client.QueryRow(ctx, stmt, username).Scan(&user.ID, &user.Username, &user.Password, &user.CreatedAt, &user.UpdatedAt)
 	if err != nil {
-		return nil, fmt.Errorf("%s find bookingModule: %s", errorStatement, err.Error())
+		return nil, fmt.Errorf("%s find userModule: %s", errorStatement, err.Error())
 	}
 	return &user, nil
 }

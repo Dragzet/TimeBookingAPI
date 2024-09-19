@@ -25,17 +25,19 @@ func (h *Handler) CreateUser(w http.ResponseWriter, r *http.Request) {
 	}
 
 	newUser := userModule.New()
-	fmt.Println(string(d))
 	err = json.Unmarshal(d, &newUser)
 	if err != nil {
-		fmt.Println(err)
+		answer.Status = http.StatusBadRequest
+		return
+	}
+
+	if len(newUser.Username) < 5 || len(newUser.Password) < 5 || len(newUser.Password) > 72 {
 		answer.Status = http.StatusBadRequest
 		return
 	}
 
 	err = h.userStorage.Create(r.Context(), newUser)
 	if err != nil {
-		fmt.Println(err)
 		answer.Status = http.StatusInternalServerError
 		return
 	}
@@ -52,7 +54,6 @@ func (h *Handler) FindUser(w http.ResponseWriter, r *http.Request) {
 	}()
 
 	username := r.URL.Query().Get("username")
-	fmt.Println(username)
 	if username == "" {
 		answer.Status = http.StatusBadRequest
 		return

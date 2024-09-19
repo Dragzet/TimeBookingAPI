@@ -39,9 +39,7 @@ type UserHandler interface {
 type BookingHandler interface {
 	FindBooking(w http.ResponseWriter, r *http.Request)
 	CreateBooking(w http.ResponseWriter, r *http.Request)
-	UpdateBooking(w http.ResponseWriter, r *http.Request)
 	DeleteBooking(w http.ResponseWriter, r *http.Request)
-	DeleteBookings(w http.ResponseWriter, r *http.Request)
 }
 
 func (h *Handler) ServeHTTP(writer http.ResponseWriter, request *http.Request) {
@@ -57,11 +55,9 @@ func (h *Handler) RegisterUserHandlers() {
 }
 
 func (h *Handler) RegisterBookingHandlers() {
-	//h.router.HandleFunc("/booking", h.CreateBooking).Methods(http.MethodPost)
-	//h.router.HandleFunc("/booking/{id}", h.FindBooking).Methods(http.MethodGet)
-	//h.router.HandleFunc("/booking/{id}", h.UpdateBooking).Methods(http.MethodPut)
-	//h.router.HandleFunc("/booking/{id}", h.DeleteBooking).Methods(http.MethodDelete)
-	//h.router.HandleFunc("/booking", h.DeleteBookings).Methods(http.MethodDelete)
+	h.router.HandleFunc("/booking", h.CreateBooking).Methods(http.MethodPost)
+	h.router.HandleFunc("/booking", h.FindBooking).Methods(http.MethodGet)
+	//h.router.HandleFunc("/booking", h.DeleteBooking).Methods(http.MethodDelete)
 }
 
 func NewHandler(router *mux.Router, bookingStorage bookingModule.BookingStorage, userStorage userModule.UserStorage) *Handler {
