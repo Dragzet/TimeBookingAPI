@@ -4,6 +4,7 @@ import (
 	"TimeBookingAPI/internal/bookingModule"
 	"TimeBookingAPI/internal/config"
 	"TimeBookingAPI/internal/http-server/handlers"
+	MWLogger "TimeBookingAPI/internal/http-server/middleware/logger"
 	"TimeBookingAPI/internal/storage/PostgreSQL"
 	"TimeBookingAPI/internal/userModule"
 	"context"
@@ -38,14 +39,11 @@ func main() {
 	bookings := bookingModule.NewDB(storage)
 	users := userModule.NewDB(storage)
 	router := mux.NewRouter()
+	router.Use(MWLogger.New(logger))
 	handler := handlers.NewHandler(router, bookings, users)
-	//
-	//hash, err := bcrypt.GenerateFromPassword([]byte{1, 2, 3, 4}, bcrypt.DefaultCost)
-	//users.Create(context.TODO(), userModule.New("need", hash))
 
 	signalChan := make(chan os.Signal, 1)
 	signal.Notify(signalChan, os.Interrupt, syscall.SIGINT, syscall.SIGTERM)
-
 	server := &http.Server{
 		Addr:         cfg.Address,
 		Handler:      handler,
@@ -64,40 +62,6 @@ func main() {
 	<-signalChan
 
 	logger.Info("Shutting down the server")
-
-	//users.Create(context.TODO(), userModule.User{
-	//	//	"",
-	//	//	"John",
-	//	//	"Doe",
-	//	//	time.Now(),
-	//	//	time.Now(),
-	//})
-
-	//tempUser := userModule.New(
-	//	"ANTONina",
-	//	"asdf",
-	//)
-	//
-	//err = users.Create(context.TODO(), tempUser)
-	//
-	//if err != nil {
-	//	logger.Error(err.Error())
-	//}
-
-	//err = users.Delete(context.TODO(), bookings, "8f1b198a-11a5-44dd-bc53-b30f6c4f7b3f")
-	//err = bookings.Create(context.TODO(), &bookingModule.Booking{
-	//	"",
-	//	"8f1b198a-11a5-44dd-bc53-b30f6c4f7b3f",
-	//	time.Now(),
-	//	time.Now().Add(time.Hour),
-	//})
-
-	//bookingsArr, err := bookings.FindAll(context.TODO(), "8f1b198a-11a5-44dd-bc53-b30f6c4f7b3f")
-
-	//bookingModule, err := bookings.Find(context.TODO(), "f3a0ddc0-2d0f-42d0-b939-0f46926cc44f")
-
-	//err = bookings.Delete(context.TODO(), "f3a0ddc0-290f-42d0-b939-0f46926cc44f")
-
 }
 
 func setupLogger(loggsPath string) *log.Logger {

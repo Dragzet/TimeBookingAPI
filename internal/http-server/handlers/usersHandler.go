@@ -38,6 +38,7 @@ func (h *Handler) CreateUser(w http.ResponseWriter, r *http.Request) {
 
 	err = h.userStorage.Create(r.Context(), newUser)
 	if err != nil {
+		fmt.Println(err.Error())
 		answer.Status = http.StatusInternalServerError
 		return
 	}

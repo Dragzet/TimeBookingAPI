@@ -54,7 +54,7 @@ func (d db) Update(ctx context.Context, item *UserModel) error {
 
 	user, err := d.Find(ctx, item.Username)
 	if err != nil {
-		return fmt.Errorf("%s delete userModule findUser: %s", errorStatement, err.Error())
+		return fmt.Errorf("%s update userModule findUser: %s", errorStatement, err.Error())
 	}
 
 	item.ID = user.ID
@@ -67,7 +67,7 @@ func (d db) Update(ctx context.Context, item *UserModel) error {
 
 func (d db) Delete(ctx context.Context, bookings bookingModule.BookingStorage, username string) error {
 	stmt := `
-		DELETE FROM users WHERE id = $1
+		DELETE FROM users WHERE username = $1
 	`
 
 	user, err := d.Find(ctx, username)
@@ -75,21 +75,19 @@ func (d db) Delete(ctx context.Context, bookings bookingModule.BookingStorage, u
 		return fmt.Errorf("%s delete userModule findUser: %s", errorStatement, err.Error())
 	}
 
-	bookingsArr, err := bookings.FindAll(ctx, user.ID)
+	bookingsArr, err := bookings.FindAll(ctx, user.Username)
 	if err != nil {
 		return fmt.Errorf("%s delete userModule findAll: %s", errorStatement, err.Error())
 	}
-
 	for _, tempBooking := range bookingsArr {
 		if err := bookings.Delete(ctx, tempBooking.ID); err != nil {
 			return fmt.Errorf("%s delete userModule DeleteBooking: %s", errorStatement, err.Error())
 		}
 	}
 
-	if _, err := d.client.Exec(ctx, stmt, user.ID); err != nil {
+	if _, err := d.client.Exec(ctx, stmt, user.Username); err != nil {
 		return fmt.Errorf("%s delete userModule: %s", errorStatement, err.Error())
 	}
-
 	return nil
 }
 

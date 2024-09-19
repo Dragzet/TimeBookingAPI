@@ -57,7 +57,7 @@ func (h *Handler) RegisterUserHandlers() {
 func (h *Handler) RegisterBookingHandlers() {
 	h.router.HandleFunc("/booking", h.CreateBooking).Methods(http.MethodPost)
 	h.router.HandleFunc("/booking", h.FindBooking).Methods(http.MethodGet)
-	//h.router.HandleFunc("/booking", h.DeleteBooking).Methods(http.MethodDelete)
+	h.router.HandleFunc("/booking", h.DeleteBooking).Methods(http.MethodDelete)
 }
 
 func NewHandler(router *mux.Router, bookingStorage bookingModule.BookingStorage, userStorage userModule.UserStorage) *Handler {

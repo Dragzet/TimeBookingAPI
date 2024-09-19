@@ -10,7 +10,6 @@ import (
 )
 
 func (h *Handler) CreateBooking(w http.ResponseWriter, r *http.Request) {
-
 	answer := Answer{
 		Status: http.StatusOK,
 	}
@@ -33,17 +32,14 @@ func (h *Handler) CreateBooking(w http.ResponseWriter, r *http.Request) {
 	}
 
 	newBooking.EndTime = time.Now().Add(time.Hour * time.Duration(newBooking.Delta))
-
 	err = h.bookingStorage.Create(r.Context(), newBooking)
 	if err != nil {
-		fmt.Print(err.Error())
 		answer.Status = http.StatusInternalServerError
 		return
 	}
 }
 
 func (h *Handler) FindBooking(w http.ResponseWriter, r *http.Request) {
-
 	answer := Answer{
 		Status: http.StatusOK,
 	}
@@ -66,4 +62,26 @@ func (h *Handler) FindBooking(w http.ResponseWriter, r *http.Request) {
 	}
 
 	answer.Data = bookings
+}
+
+func (h *Handler) DeleteBooking(w http.ResponseWriter, r *http.Request) {
+	answer := Answer{
+		Status: http.StatusOK,
+	}
+
+	defer func() {
+		w.Write(answer.getJson())
+	}()
+
+	id := r.URL.Query().Get("id")
+	if id == "" {
+		answer.Status = http.StatusBadRequest
+		return
+	}
+
+	err := h.bookingStorage.Delete(r.Context(), id)
+	if err != nil {
+		answer.Status = http.StatusInternalServerError
+		return
+	}
 }
