@@ -30,9 +30,7 @@ type Handler struct {
 }
 
 type UserHandler interface {
-	FindUser(w http.ResponseWriter, r *http.Request)
 	CreateUser(w http.ResponseWriter, r *http.Request)
-	UpdateUser(w http.ResponseWriter, r *http.Request)
 	DeleteUser(w http.ResponseWriter, r *http.Request)
 }
 
@@ -48,8 +46,6 @@ func (h *Handler) ServeHTTP(writer http.ResponseWriter, request *http.Request) {
 
 func (h *Handler) RegisterUserHandlers() {
 	h.router.HandleFunc("/user", h.CreateUser).Methods(http.MethodPost)
-	h.router.HandleFunc("/user", h.FindUser).Methods(http.MethodGet)
-	h.router.HandleFunc("/user", h.UpdateUser).Methods(http.MethodPut)
 	h.router.HandleFunc("/user", h.DeleteUser).Methods(http.MethodDelete)
 
 }
@@ -73,5 +69,9 @@ func NewHandler(router *mux.Router, bookingStorage bookingModule.BookingStorage,
 }
 
 func (h *Handler) DefaultHandler(w http.ResponseWriter, r *http.Request) {
-	w.WriteHeader(http.StatusNotFound)
+	answer := Answer{
+		Status: http.StatusNotFound,
+	}
+
+	w.Write(answer.getJson())
 }

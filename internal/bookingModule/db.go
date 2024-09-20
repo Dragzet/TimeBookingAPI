@@ -56,7 +56,6 @@ func (d *db) FindAll(ctx context.Context, username string) ([]*BookingModel, err
 		if err := rows.Scan(&booking.ID, &booking.Username, &booking.StartTime, &booking.EndTime); err != nil {
 			return nil, fmt.Errorf("%s find all bookings (reading book): %s", errorStatement, err.Error())
 		}
-		fmt.Println(booking.Username, username)
 		if booking.Username == username {
 			bokingsArr = append(bokingsArr, &booking)
 		}

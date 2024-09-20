@@ -44,31 +44,6 @@ func (h *Handler) CreateUser(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-func (h *Handler) FindUser(w http.ResponseWriter, r *http.Request) {
-
-	answer := Answer{
-		Status: http.StatusOK,
-	}
-
-	defer func() {
-		w.Write(answer.getJson())
-	}()
-
-	username := r.URL.Query().Get("username")
-	if username == "" {
-		answer.Status = http.StatusBadRequest
-		return
-	}
-
-	user, err := h.userStorage.Find(r.Context(), username)
-	if err != nil {
-		answer.Status = http.StatusInternalServerError
-		return
-	}
-
-	answer.Data = user
-}
-
 func (h *Handler) DeleteUser(w http.ResponseWriter, r *http.Request) {
 	answer := Answer{
 		Status: http.StatusOK,
@@ -86,37 +61,6 @@ func (h *Handler) DeleteUser(w http.ResponseWriter, r *http.Request) {
 
 	err := h.userStorage.Delete(r.Context(), h.bookingStorage, username)
 	if err != nil {
-		answer.Status = http.StatusInternalServerError
-		return
-	}
-}
-
-func (h *Handler) UpdateUser(w http.ResponseWriter, r *http.Request) {
-	answer := Answer{
-		Status: http.StatusOK,
-	}
-
-	defer func() {
-		w.Write(answer.getJson())
-	}()
-
-	d, err := io.ReadAll(r.Body)
-	if err != nil || len(d) == 0 {
-		answer.Status = http.StatusBadRequest
-		return
-	}
-
-	updatedUser := userModule.New()
-	err = json.Unmarshal(d, &updatedUser)
-	if err != nil {
-		answer.Status = http.StatusBadRequest
-		return
-	}
-
-	fmt.Println(updatedUser)
-	err = h.userStorage.Update(r.Context(), updatedUser)
-	if err != nil {
-		fmt.Println(err)
 		answer.Status = http.StatusInternalServerError
 		return
 	}
