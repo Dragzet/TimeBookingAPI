@@ -8,6 +8,17 @@ import (
 	"net/http"
 )
 
+// CreateUser godoc
+// @Summary Create a user
+// @Description Create a new user with the provided information
+// @Tags user
+// @Accept json
+// @Produce json
+// @Param user body userModule.UserModel true "User data"
+// @Success 201 {object} Answer
+// @Failure 400 {object} Answer "Invalid input"
+// @Failure 500 {object} Answer "Internal server error"
+// @Router /user [post]
 func (h *Handler) CreateUser(w http.ResponseWriter, r *http.Request) {
 
 	answer := Answer{
@@ -44,6 +55,17 @@ func (h *Handler) CreateUser(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
+// DeleteUser godoc
+// @Summary Delete a user
+// @Description Delete a user by their ID
+// @Tags user
+// @Accept json
+// @Produce json
+// @Param id path int true "User ID"
+// @Success 204 {object} Answer "No content"
+// @Failure 404 {object} Answer "User not found"
+// @Failure 500 {object} Answer "Internal server error"
+// @Router /user/{id} [delete]
 func (h *Handler) DeleteUser(w http.ResponseWriter, r *http.Request) {
 	answer := Answer{
 		Status: http.StatusOK,
