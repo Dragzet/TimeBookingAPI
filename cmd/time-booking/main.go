@@ -1,6 +1,7 @@
 package main
 
 import (
+	_ "TimeBookingAPI/docs"
 	"TimeBookingAPI/internal/bookingModule"
 	"TimeBookingAPI/internal/config"
 	"TimeBookingAPI/internal/http-server/handlers"
@@ -10,6 +11,7 @@ import (
 	"context"
 	"github.com/go-ozzo/ozzo-log"
 	"github.com/gorilla/mux"
+	httpSwagger "github.com/swaggo/http-swagger"
 	"net/http"
 	"os"
 	"os/signal"
@@ -40,7 +42,8 @@ func main() {
 	users := userModule.NewDB(storage)
 	router := mux.NewRouter()
 	router.Use(MWLogger.New(logger))
-	handler := handlers.NewHandler(router, bookings, users)
+	router.PathPrefix("/swagger").Handler(httpSwagger.WrapHandler)
+	handler := handlers.NewHandler(router, bookings, users, logger)
 
 	signalChan := make(chan os.Signal, 1)
 	signal.Notify(signalChan, os.Interrupt, syscall.SIGINT, syscall.SIGTERM)

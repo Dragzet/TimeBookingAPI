@@ -721,3 +721,507 @@
 2024-09-19T22:02:44+03:00 [Info][app] Request from [::1]:62778: METHOD - POST || PATH - /user
 2024-09-19T22:02:44+03:00 [Info][app] Request from [::1]:62778 completed in 72.0309ms
 2024-09-19T22:02:54+03:00 [Info][app] Shutting down the server
+2024-09-21T13:01:38+03:00 [Info][app] Config loaded successfully
+2024-09-21T13:01:38+03:00 [Info][app] Starting the application
+2024-09-21T13:01:38+03:00 [Info][app] Server started successfully
+2024-09-21T13:01:39+03:00 [Info][app] Request from [::1]:55270: METHOD - GET || PATH - /swagger/index.html
+2024-09-21T13:01:39+03:00 [Info][app] Request from [::1]:55270 completed in 0s
+2024-09-21T13:01:39+03:00 [Info][app] Request from [::1]:55271: METHOD - GET || PATH - /swagger/swagger-ui-bundle.js
+2024-09-21T13:01:39+03:00 [Info][app] Request from [::1]:55270: METHOD - GET || PATH - /swagger/swagger-ui.css
+2024-09-21T13:01:39+03:00 [Info][app] Request from [::1]:55272: METHOD - GET || PATH - /swagger/swagger-ui-standalone-preset.js
+2024-09-21T13:01:39+03:00 [Info][app] Request from [::1]:55270 completed in 0s
+2024-09-21T13:01:39+03:00 [Info][app] Request from [::1]:55272 completed in 508.5µs
+2024-09-21T13:01:39+03:00 [Info][app] Request from [::1]:55271 completed in 2.0982ms
+2024-09-21T13:01:40+03:00 [Info][app] Request from [::1]:55271: METHOD - GET || PATH - /swagger/doc.json
+2024-09-21T13:01:40+03:00 [Info][app] Request from [::1]:55271 completed in 0s
+2024-09-21T13:02:51+03:00 [Info][app] Request from [::1]:55353: METHOD - POST || PATH - /user
+2024-09-21T13:02:51+03:00 [Info][app] Request from [::1]:55353 completed in 0s
+2024-09-21T13:03:05+03:00 [Info][app] Shutting down the server
+2024-09-21T13:08:12+03:00 [Info][app] Config loaded successfully
+2024-09-21T13:08:12+03:00 [Info][app] Starting the application
+2024-09-21T13:08:12+03:00 [Info][app] Server started successfully
+2024-09-21T13:08:18+03:00 [Info][app] Request from [::1]:55516: METHOD - GET || PATH - /swagger/index.html
+2024-09-21T13:08:18+03:00 [Info][app] Request from [::1]:55516 completed in 0s
+2024-09-21T13:08:18+03:00 [Info][app] Request from [::1]:55516: METHOD - GET || PATH - /swagger/swagger-ui.css
+2024-09-21T13:08:18+03:00 [Info][app] Request from [::1]:55516 completed in 0s
+2024-09-21T13:08:18+03:00 [Info][app] Request from [::1]:55517: METHOD - GET || PATH - /swagger/swagger-ui-bundle.js
+2024-09-21T13:08:18+03:00 [Info][app] Request from [::1]:55526: METHOD - GET || PATH - /swagger/swagger-ui-standalone-preset.js
+2024-09-21T13:08:18+03:00 [Info][app] Request from [::1]:55526 completed in 506.3µs
+2024-09-21T13:08:18+03:00 [Info][app] Request from [::1]:55517 completed in 2.2316ms
+2024-09-21T13:08:18+03:00 [Info][app] Request from [::1]:55517: METHOD - GET || PATH - /swagger/doc.json
+2024-09-21T13:08:18+03:00 [Info][app] Request from [::1]:55517 completed in 0s
+2024-09-21T13:08:40+03:00 [Info][app] Request from [::1]:55552: METHOD - POST || PATH - /booking
+2024-09-21T13:08:43+03:00 [Info][app] Request from [::1]:55552 completed in 2.7048298s
+2024-09-21T13:09:06+03:00 [Info][app] Request from [::1]:55573: METHOD - POST || PATH - /user
+2024-09-21T13:09:09+03:00 [Info][app] Request from [::1]:55573 completed in 2.7453072s
+2024-09-21T13:09:15+03:00 [Info][app] Request from [::1]:55599: METHOD - POST || PATH - /user
+2024-09-21T13:09:18+03:00 [Info][app] Request from [::1]:55599 completed in 2.7309712s
+2024-09-21T13:09:51+03:00 [Info][app] Shutting down the server
+2024-09-21T13:18:56+03:00 [Info][app] Config loaded successfully
+2024-09-21T13:18:56+03:00 [Info][app] Starting the application
+2024-09-21T13:18:56+03:00 [Info][app] Server started successfully
+2024-09-21T13:18:59+03:00 [Info][app] Request from [::1]:54614: METHOD - GET || PATH - /swagger/index.html
+2024-09-21T13:18:59+03:00 [Info][app] Request from [::1]:54614 completed in 503.6µs
+2024-09-21T13:18:59+03:00 [Info][app] Request from [::1]:54614: METHOD - GET || PATH - /swagger/swagger-ui.css
+2024-09-21T13:18:59+03:00 [Info][app] Request from [::1]:54614 completed in 0s
+2024-09-21T13:18:59+03:00 [Info][app] Request from [::1]:54615: METHOD - GET || PATH - /swagger/swagger-ui-bundle.js
+2024-09-21T13:18:59+03:00 [Info][app] Request from [::1]:54616: METHOD - GET || PATH - /swagger/swagger-ui-standalone-preset.js
+2024-09-21T13:18:59+03:00 [Info][app] Request from [::1]:54616 completed in 0s
+2024-09-21T13:18:59+03:00 [Info][app] Request from [::1]:54615 completed in 2.5664ms
+2024-09-21T13:18:59+03:00 [Info][app] Request from [::1]:54615: METHOD - GET || PATH - /swagger/doc.json
+2024-09-21T13:18:59+03:00 [Info][app] Request from [::1]:54615 completed in 0s
+2024-09-21T13:19:44+03:00 [Info][app] Shutting down the server
+2024-09-21T13:19:50+03:00 [Info][app] Config loaded successfully
+2024-09-21T13:19:50+03:00 [Info][app] Starting the application
+2024-09-21T13:19:50+03:00 [Info][app] Server started successfully
+2024-09-21T13:19:52+03:00 [Info][app] Request from [::1]:54651: METHOD - GET || PATH - /swagger/index.html
+2024-09-21T13:19:52+03:00 [Info][app] Request from [::1]:54651 completed in 1.0914ms
+2024-09-21T13:19:52+03:00 [Info][app] Request from [::1]:54651: METHOD - GET || PATH - /swagger/swagger-ui.css
+2024-09-21T13:19:52+03:00 [Info][app] Request from [::1]:54652: METHOD - GET || PATH - /swagger/swagger-ui-bundle.js
+2024-09-21T13:19:52+03:00 [Info][app] Request from [::1]:54651 completed in 0s
+2024-09-21T13:19:52+03:00 [Info][app] Request from [::1]:54652 completed in 503.5µs
+2024-09-21T13:19:52+03:00 [Info][app] Request from [::1]:54653: METHOD - GET || PATH - /swagger/swagger-ui-standalone-preset.js
+2024-09-21T13:19:52+03:00 [Info][app] Request from [::1]:54653 completed in 504.6µs
+2024-09-21T13:19:52+03:00 [Info][app] Request from [::1]:54652: METHOD - GET || PATH - /swagger/doc.json
+2024-09-21T13:19:52+03:00 [Info][app] Request from [::1]:54652 completed in 0s
+2024-09-21T13:20:35+03:00 [Info][app] Shutting down the server
+2024-09-21T13:20:59+03:00 [Info][app] Config loaded successfully
+2024-09-21T13:20:59+03:00 [Info][app] Starting the application
+2024-09-21T13:20:59+03:00 [Info][app] Server started successfully
+2024-09-21T13:21:00+03:00 [Info][app] Request from [::1]:54679: METHOD - GET || PATH - /swagger/index.html
+2024-09-21T13:21:00+03:00 [Info][app] Request from [::1]:54679 completed in 0s
+2024-09-21T13:21:00+03:00 [Info][app] Request from [::1]:54679: METHOD - GET || PATH - /swagger/swagger-ui.css
+2024-09-21T13:21:00+03:00 [Info][app] Request from [::1]:54679 completed in 0s
+2024-09-21T13:21:00+03:00 [Info][app] Request from [::1]:54680: METHOD - GET || PATH - /swagger/swagger-ui-bundle.js
+2024-09-21T13:21:00+03:00 [Info][app] Request from [::1]:54679: METHOD - GET || PATH - /swagger/swagger-ui-standalone-preset.js
+2024-09-21T13:21:00+03:00 [Info][app] Request from [::1]:54679 completed in 0s
+2024-09-21T13:21:00+03:00 [Info][app] Request from [::1]:54680 completed in 2.3617ms
+2024-09-21T13:21:00+03:00 [Info][app] Request from [::1]:54680: METHOD - GET || PATH - /swagger/doc.json
+2024-09-21T13:21:00+03:00 [Info][app] Request from [::1]:54680 completed in 995.8µs
+2024-09-21T13:22:12+03:00 [Info][app] Shutting down the server
+2024-09-21T13:22:20+03:00 [Info][app] Config loaded successfully
+2024-09-21T13:22:20+03:00 [Info][app] Starting the application
+2024-09-21T13:22:20+03:00 [Info][app] Server started successfully
+2024-09-21T13:22:26+03:00 [Info][app] Request from [::1]:54691: METHOD - GET || PATH - /swagger/index.html
+2024-09-21T13:22:26+03:00 [Info][app] Request from [::1]:54691 completed in 503.9µs
+2024-09-21T13:22:26+03:00 [Info][app] Request from [::1]:54691: METHOD - GET || PATH - /swagger/swagger-ui.css
+2024-09-21T13:22:26+03:00 [Info][app] Request from [::1]:54692: METHOD - GET || PATH - /swagger/swagger-ui-bundle.js
+2024-09-21T13:22:26+03:00 [Info][app] Request from [::1]:54691 completed in 0s
+2024-09-21T13:22:26+03:00 [Info][app] Request from [::1]:54693: METHOD - GET || PATH - /swagger/swagger-ui-standalone-preset.js
+2024-09-21T13:22:26+03:00 [Info][app] Request from [::1]:54693 completed in 0s
+2024-09-21T13:22:26+03:00 [Info][app] Request from [::1]:54692 completed in 2.9769ms
+2024-09-21T13:22:26+03:00 [Info][app] Request from [::1]:54692: METHOD - GET || PATH - /swagger/doc.json
+2024-09-21T13:22:26+03:00 [Info][app] Request from [::1]:54692 completed in 0s
+2024-09-21T13:22:39+03:00 [Info][app] Request from [::1]:54697: METHOD - GET || PATH - /swagger/doc.json
+2024-09-21T13:22:39+03:00 [Info][app] Request from [::1]:54697 completed in 0s
+2024-09-21T13:23:23+03:00 [Info][app] Shutting down the server
+2024-09-21T13:23:47+03:00 [Info][app] Config loaded successfully
+2024-09-21T13:23:47+03:00 [Info][app] Starting the application
+2024-09-21T13:23:47+03:00 [Info][app] Server started successfully
+2024-09-21T13:23:49+03:00 [Info][app] Request from [::1]:54714: METHOD - GET || PATH - /swagger/index.html
+2024-09-21T13:23:49+03:00 [Info][app] Request from [::1]:54714 completed in 0s
+2024-09-21T13:23:49+03:00 [Info][app] Request from [::1]:54714: METHOD - GET || PATH - /swagger/swagger-ui.css
+2024-09-21T13:23:49+03:00 [Info][app] Request from [::1]:54714 completed in 996.7µs
+2024-09-21T13:23:49+03:00 [Info][app] Request from [::1]:54715: METHOD - GET || PATH - /swagger/swagger-ui-bundle.js
+2024-09-21T13:23:49+03:00 [Info][app] Request from [::1]:54714: METHOD - GET || PATH - /swagger/swagger-ui-standalone-preset.js
+2024-09-21T13:23:49+03:00 [Info][app] Request from [::1]:54714 completed in 504.1µs
+2024-09-21T13:23:49+03:00 [Info][app] Request from [::1]:54715 completed in 2.7142ms
+2024-09-21T13:23:49+03:00 [Info][app] Request from [::1]:54715: METHOD - GET || PATH - /swagger/doc.json
+2024-09-21T13:23:49+03:00 [Info][app] Request from [::1]:54715 completed in 0s
+2024-09-21T13:24:26+03:00 [Info][app] Shutting down the server
+2024-09-21T13:24:32+03:00 [Info][app] Config loaded successfully
+2024-09-21T13:24:32+03:00 [Info][app] Starting the application
+2024-09-21T13:24:32+03:00 [Info][app] Server started successfully
+2024-09-21T13:24:35+03:00 [Info][app] Request from [::1]:54724: METHOD - GET || PATH - /swagger/index.html
+2024-09-21T13:24:35+03:00 [Info][app] Request from [::1]:54724 completed in 0s
+2024-09-21T13:24:35+03:00 [Info][app] Request from [::1]:54724: METHOD - GET || PATH - /swagger/swagger-ui.css
+2024-09-21T13:24:35+03:00 [Info][app] Request from [::1]:54725: METHOD - GET || PATH - /swagger/swagger-ui-bundle.js
+2024-09-21T13:24:35+03:00 [Info][app] Request from [::1]:54724 completed in 0s
+2024-09-21T13:24:35+03:00 [Info][app] Request from [::1]:54725 completed in 504.8µs
+2024-09-21T13:24:35+03:00 [Info][app] Request from [::1]:54726: METHOD - GET || PATH - /swagger/swagger-ui-standalone-preset.js
+2024-09-21T13:24:35+03:00 [Info][app] Request from [::1]:54726 completed in 505.7µs
+2024-09-21T13:24:35+03:00 [Info][app] Request from [::1]:54725: METHOD - GET || PATH - /swagger/doc.json
+2024-09-21T13:24:35+03:00 [Info][app] Request from [::1]:54725 completed in 0s
+2024-09-21T13:25:20+03:00 [Info][app] Shutting down the server
+2024-09-21T13:25:26+03:00 [Info][app] Config loaded successfully
+2024-09-21T13:25:26+03:00 [Info][app] Starting the application
+2024-09-21T13:25:26+03:00 [Info][app] Server started successfully
+2024-09-21T13:25:29+03:00 [Info][app] Request from [::1]:54743: METHOD - GET || PATH - /swagger/index.html
+2024-09-21T13:25:29+03:00 [Info][app] Request from [::1]:54743 completed in 505.2µs
+2024-09-21T13:25:29+03:00 [Info][app] Request from [::1]:54743: METHOD - GET || PATH - /swagger/swagger-ui.css
+2024-09-21T13:25:29+03:00 [Info][app] Request from [::1]:54743 completed in 0s
+2024-09-21T13:25:29+03:00 [Info][app] Request from [::1]:54744: METHOD - GET || PATH - /swagger/swagger-ui-bundle.js
+2024-09-21T13:25:29+03:00 [Info][app] Request from [::1]:54745: METHOD - GET || PATH - /swagger/swagger-ui-standalone-preset.js
+2024-09-21T13:25:29+03:00 [Info][app] Request from [::1]:54745 completed in 526.1µs
+2024-09-21T13:25:29+03:00 [Info][app] Request from [::1]:54744 completed in 526.1µs
+2024-09-21T13:25:29+03:00 [Info][app] Request from [::1]:54744: METHOD - GET || PATH - /swagger/doc.json
+2024-09-21T13:25:29+03:00 [Info][app] Request from [::1]:54744 completed in 0s
+2024-09-21T13:28:57+03:00 [Info][app] Shutting down the server
+2024-09-21T19:47:30+03:00 [Info][app] Config loaded successfully
+2024-09-21T19:47:30+03:00 [Info][app] Starting the application
+2024-09-21T19:47:30+03:00 [Info][app] Server started successfully
+2024-09-21T19:47:39+03:00 [Info][app] Request from [::1]:57838: METHOD - GET || PATH - /swagger/index.html
+2024-09-21T19:47:39+03:00 [Info][app] Request from [::1]:57838 completed in 520.7µs
+2024-09-21T19:47:39+03:00 [Info][app] Request from [::1]:57838: METHOD - GET || PATH - /swagger/swagger-ui.css
+2024-09-21T19:47:39+03:00 [Info][app] Request from [::1]:57838 completed in 0s
+2024-09-21T19:47:39+03:00 [Info][app] Request from [::1]:57839: METHOD - GET || PATH - /swagger/swagger-ui-bundle.js
+2024-09-21T19:47:39+03:00 [Info][app] Request from [::1]:57840: METHOD - GET || PATH - /swagger/swagger-ui-standalone-preset.js
+2024-09-21T19:47:39+03:00 [Info][app] Request from [::1]:57840 completed in 0s
+2024-09-21T19:47:39+03:00 [Info][app] Request from [::1]:57839 completed in 3.0352ms
+2024-09-21T19:47:39+03:00 [Info][app] Request from [::1]:57839: METHOD - GET || PATH - /swagger/doc.json
+2024-09-21T19:47:39+03:00 [Info][app] Request from [::1]:57839 completed in 0s
+2024-09-21T19:47:39+03:00 [Info][app] Request from [::1]:57839: METHOD - GET || PATH - /swagger/favicon-32x32.png
+2024-09-21T19:47:39+03:00 [Info][app] Request from [::1]:57839 completed in 0s
+2024-09-21T19:50:25+03:00 [Info][app] Shutting down the server
+2024-09-21T19:50:49+03:00 [Info][app] Config loaded successfully
+2024-09-21T19:50:49+03:00 [Info][app] Starting the application
+2024-09-21T19:50:49+03:00 [Info][app] Server started successfully
+2024-09-21T19:51:03+03:00 [Info][app] Request from [::1]:58291: METHOD - GET || PATH - /swagger/index.html
+2024-09-21T19:51:03+03:00 [Info][app] Request from [::1]:58291 completed in 0s
+2024-09-21T19:51:03+03:00 [Info][app] Request from [::1]:58291: METHOD - GET || PATH - /swagger/swagger-ui.css
+2024-09-21T19:51:03+03:00 [Info][app] Request from [::1]:58291 completed in 0s
+2024-09-21T19:51:03+03:00 [Info][app] Request from [::1]:58292: METHOD - GET || PATH - /swagger/swagger-ui-bundle.js
+2024-09-21T19:51:03+03:00 [Info][app] Request from [::1]:58293: METHOD - GET || PATH - /swagger/swagger-ui-standalone-preset.js
+2024-09-21T19:51:03+03:00 [Info][app] Request from [::1]:58293 completed in 505.2µs
+2024-09-21T19:51:03+03:00 [Info][app] Request from [::1]:58292 completed in 3.3708ms
+2024-09-21T19:51:03+03:00 [Info][app] Request from [::1]:58292: METHOD - GET || PATH - /swagger/doc.json
+2024-09-21T19:51:03+03:00 [Info][app] Request from [::1]:58292 completed in 0s
+2024-09-21T19:52:37+03:00 [Info][app] Shutting down the server
+2024-09-21T19:53:16+03:00 [Info][app] Config loaded successfully
+2024-09-21T19:53:16+03:00 [Info][app] Starting the application
+2024-09-21T19:53:16+03:00 [Info][app] Server started successfully
+2024-09-21T19:53:20+03:00 [Info][app] Request from [::1]:58457: METHOD - GET || PATH - /swagger/index.html
+2024-09-21T19:53:20+03:00 [Info][app] Request from [::1]:58457 completed in 0s
+2024-09-21T19:53:20+03:00 [Info][app] Request from [::1]:58457: METHOD - GET || PATH - /swagger/swagger-ui.css
+2024-09-21T19:53:20+03:00 [Info][app] Request from [::1]:58458: METHOD - GET || PATH - /swagger/swagger-ui-bundle.js
+2024-09-21T19:53:20+03:00 [Info][app] Request from [::1]:58457 completed in 0s
+2024-09-21T19:53:20+03:00 [Info][app] Request from [::1]:58459: METHOD - GET || PATH - /swagger/swagger-ui-standalone-preset.js
+2024-09-21T19:53:20+03:00 [Info][app] Request from [::1]:58459 completed in 0s
+2024-09-21T19:53:20+03:00 [Info][app] Request from [::1]:58458 completed in 2.7089ms
+2024-09-21T19:53:20+03:00 [Info][app] Request from [::1]:58458: METHOD - GET || PATH - /swagger/doc.json
+2024-09-21T19:53:20+03:00 [Info][app] Request from [::1]:58458 completed in 0s
+2024-09-21T19:53:20+03:00 [Info][app] Request from [::1]:58459: METHOD - GET || PATH - /swagger/favicon-32x32.png
+2024-09-21T19:53:20+03:00 [Info][app] Request from [::1]:58459 completed in 0s
+2024-09-21T19:53:27+03:00 [Info][app] Shutting down the server
+2024-09-21T19:53:32+03:00 [Info][app] Config loaded successfully
+2024-09-21T19:53:32+03:00 [Info][app] Starting the application
+2024-09-21T19:53:32+03:00 [Info][app] Server started successfully
+2024-09-21T19:53:34+03:00 [Info][app] Request from [::1]:58470: METHOD - GET || PATH - /swagger/index.html
+2024-09-21T19:53:34+03:00 [Info][app] Request from [::1]:58470 completed in 503.5µs
+2024-09-21T19:53:34+03:00 [Info][app] Request from [::1]:58470: METHOD - GET || PATH - /swagger/swagger-ui.css
+2024-09-21T19:53:34+03:00 [Info][app] Request from [::1]:58471: METHOD - GET || PATH - /swagger/swagger-ui-bundle.js
+2024-09-21T19:53:34+03:00 [Info][app] Request from [::1]:58470 completed in 0s
+2024-09-21T19:53:34+03:00 [Info][app] Request from [::1]:58471 completed in 504.7µs
+2024-09-21T19:53:34+03:00 [Info][app] Request from [::1]:58472: METHOD - GET || PATH - /swagger/swagger-ui-standalone-preset.js
+2024-09-21T19:53:34+03:00 [Info][app] Request from [::1]:58472 completed in 0s
+2024-09-21T19:53:34+03:00 [Info][app] Request from [::1]:58471: METHOD - GET || PATH - /swagger/doc.json
+2024-09-21T19:53:34+03:00 [Info][app] Request from [::1]:58471 completed in 0s
+2024-09-21T19:53:34+03:00 [Info][app] Request from [::1]:58471: METHOD - GET || PATH - /swagger/favicon-32x32.png
+2024-09-21T19:53:34+03:00 [Info][app] Request from [::1]:58471 completed in 0s
+2024-09-21T19:54:09+03:00 [Info][app] Shutting down the server
+2024-09-21T19:54:14+03:00 [Info][app] Config loaded successfully
+2024-09-21T19:54:14+03:00 [Info][app] Starting the application
+2024-09-21T19:54:14+03:00 [Info][app] Server started successfully
+2024-09-21T19:54:17+03:00 [Info][app] Request from [::1]:58524: METHOD - GET || PATH - /swagger/index.html
+2024-09-21T19:54:17+03:00 [Info][app] Request from [::1]:58524 completed in 0s
+2024-09-21T19:54:17+03:00 [Info][app] Request from [::1]:58524: METHOD - GET || PATH - /swagger/swagger-ui.css
+2024-09-21T19:54:17+03:00 [Info][app] Request from [::1]:58525: METHOD - GET || PATH - /swagger/swagger-ui-bundle.js
+2024-09-21T19:54:17+03:00 [Info][app] Request from [::1]:58524 completed in 0s
+2024-09-21T19:54:17+03:00 [Info][app] Request from [::1]:58526: METHOD - GET || PATH - /swagger/swagger-ui-standalone-preset.js
+2024-09-21T19:54:17+03:00 [Info][app] Request from [::1]:58525 completed in 1.0543ms
+2024-09-21T19:54:17+03:00 [Info][app] Request from [::1]:58526 completed in 0s
+2024-09-21T19:54:17+03:00 [Info][app] Request from [::1]:58525: METHOD - GET || PATH - /swagger/doc.json
+2024-09-21T19:54:17+03:00 [Info][app] Request from [::1]:58525 completed in 0s
+2024-09-21T19:54:17+03:00 [Info][app] Request from [::1]:58525: METHOD - GET || PATH - /swagger/favicon-32x32.png
+2024-09-21T19:54:17+03:00 [Info][app] Request from [::1]:58525 completed in 0s
+2024-09-21T19:57:14+03:00 [Info][app] Shutting down the server
+2024-09-21T20:04:12+03:00 [Info][app] Config loaded successfully
+2024-09-21T20:04:12+03:00 [Info][app] Starting the application
+2024-09-21T20:04:12+03:00 [Info][app] Server started successfully
+2024-09-21T20:04:23+03:00 [Info][app] Request from [::1]:59730: METHOD - GET || PATH - /booking
+2024-09-21T20:04:25+03:00 [Error][app] Request from [::1]:59730 ended with error: internal/bookingModule/db.go:  find all bookings: failed to connect to `user=admin database=appDB`: hostname resolving error: lookup db: no such host
+2024-09-21T20:04:25+03:00 [Info][app] Request from [::1]:59730 completed in 2.7001795s
+2024-09-21T20:04:36+03:00 [Info][app] Request from [::1]:59762: METHOD - POST || PATH - /user
+2024-09-21T20:04:39+03:00 [Error][app] Request from [::1]:59762 ended with error: internal/userModule/db.go:  create userModule: failed to connect to `user=admin database=appDB`: hostname resolving error: lookup db: no such host
+2024-09-21T20:04:39+03:00 [Info][app] Request from [::1]:59762 completed in 2.7403079s
+2024-09-21T20:05:02+03:00 [Info][app] Shutting down the server
+2024-09-21T20:06:55+03:00 [Info][app] Config loaded successfully
+2024-09-21T20:06:55+03:00 [Info][app] Starting the application
+2024-09-21T20:06:55+03:00 [Info][app] Server started successfully
+2024-09-21T20:07:00+03:00 [Info][app] Request from [::1]:59995: METHOD - GET || PATH - /swagger/index.html
+2024-09-21T20:07:00+03:00 [Info][app] Request from [::1]:59995 completed in 0s
+2024-09-21T20:07:00+03:00 [Info][app] Request from [::1]:59995: METHOD - GET || PATH - /swagger/swagger-ui.css
+2024-09-21T20:07:00+03:00 [Info][app] Request from [::1]:59995 completed in 0s
+2024-09-21T20:07:00+03:00 [Info][app] Request from [::1]:59996: METHOD - GET || PATH - /swagger/swagger-ui-bundle.js
+2024-09-21T20:07:00+03:00 [Info][app] Request from [::1]:60014: METHOD - GET || PATH - /swagger/swagger-ui-standalone-preset.js
+2024-09-21T20:07:00+03:00 [Info][app] Request from [::1]:60014 completed in 0s
+2024-09-21T20:07:00+03:00 [Info][app] Request from [::1]:59996 completed in 2.5626ms
+2024-09-21T20:07:00+03:00 [Info][app] Request from [::1]:59996: METHOD - GET || PATH - /swagger/doc.json
+2024-09-21T20:07:00+03:00 [Info][app] Request from [::1]:59996 completed in 0s
+2024-09-21T20:07:00+03:00 [Info][app] Request from [::1]:60014: METHOD - GET || PATH - /swagger/favicon-32x32.png
+2024-09-21T20:07:00+03:00 [Info][app] Request from [::1]:60014 completed in 0s
+2024-09-21T20:07:25+03:00 [Info][app] Shutting down the server
+2024-09-21T20:07:30+03:00 [Info][app] Config loaded successfully
+2024-09-21T20:07:30+03:00 [Info][app] Starting the application
+2024-09-21T20:07:30+03:00 [Info][app] Server started successfully
+2024-09-21T20:07:31+03:00 [Info][app] Request from [::1]:60034: METHOD - GET || PATH - /swagger/index.html
+2024-09-21T20:07:31+03:00 [Info][app] Request from [::1]:60034 completed in 508.3µs
+2024-09-21T20:07:31+03:00 [Info][app] Request from [::1]:60035: METHOD - GET || PATH - /swagger/swagger-ui-bundle.js
+2024-09-21T20:07:31+03:00 [Info][app] Request from [::1]:60034: METHOD - GET || PATH - /swagger/swagger-ui.css
+2024-09-21T20:07:31+03:00 [Info][app] Request from [::1]:60036: METHOD - GET || PATH - /swagger/swagger-ui-standalone-preset.js
+2024-09-21T20:07:31+03:00 [Info][app] Request from [::1]:60034 completed in 0s
+2024-09-21T20:07:31+03:00 [Info][app] Request from [::1]:60036 completed in 504.7µs
+2024-09-21T20:07:31+03:00 [Info][app] Request from [::1]:60035 completed in 504.7µs
+2024-09-21T20:07:31+03:00 [Info][app] Request from [::1]:60035: METHOD - GET || PATH - /swagger/doc.json
+2024-09-21T20:07:31+03:00 [Info][app] Request from [::1]:60035 completed in 0s
+2024-09-21T20:07:31+03:00 [Info][app] Request from [::1]:60036: METHOD - GET || PATH - /swagger/favicon-32x32.png
+2024-09-21T20:07:31+03:00 [Info][app] Request from [::1]:60036 completed in 0s
+2024-09-21T20:07:44+03:00 [Info][app] Shutting down the server
+2024-09-21T20:10:49+03:00 [Info][app] Config loaded successfully
+2024-09-21T20:10:49+03:00 [Info][app] Starting the application
+2024-09-21T20:10:49+03:00 [Info][app] Server started successfully
+2024-09-21T20:10:50+03:00 [Info][app] Shutting down the server
+2024-09-21T20:13:35+03:00 [Info][app] Config loaded successfully
+2024-09-21T20:13:35+03:00 [Info][app] Starting the application
+2024-09-21T20:13:35+03:00 [Info][app] Server started successfully
+2024-09-21T20:13:38+03:00 [Info][app] Request from [::1]:61352: METHOD - GET || PATH - /swagger/index.html
+2024-09-21T20:13:38+03:00 [Info][app] Request from [::1]:61352 completed in 0s
+2024-09-21T20:13:38+03:00 [Info][app] Request from [::1]:61352: METHOD - GET || PATH - /swagger/swagger-ui.css
+2024-09-21T20:13:38+03:00 [Info][app] Request from [::1]:61353: METHOD - GET || PATH - /swagger/swagger-ui-bundle.js
+2024-09-21T20:13:38+03:00 [Info][app] Request from [::1]:61352 completed in 0s
+2024-09-21T20:13:38+03:00 [Info][app] Request from [::1]:61354: METHOD - GET || PATH - /swagger/swagger-ui-standalone-preset.js
+2024-09-21T20:13:38+03:00 [Info][app] Request from [::1]:61354 completed in 0s
+2024-09-21T20:13:38+03:00 [Info][app] Request from [::1]:61353 completed in 3.1647ms
+2024-09-21T20:13:38+03:00 [Info][app] Request from [::1]:61353: METHOD - GET || PATH - /swagger/doc.json
+2024-09-21T20:13:38+03:00 [Info][app] Request from [::1]:61353 completed in 1.5054ms
+2024-09-21T20:13:38+03:00 [Info][app] Request from [::1]:61353: METHOD - GET || PATH - /swagger/favicon-32x32.png
+2024-09-21T20:13:38+03:00 [Info][app] Request from [::1]:61353 completed in 0s
+2024-09-21T20:13:52+03:00 [Info][app] Shutting down the server
+2024-09-21T20:13:58+03:00 [Info][app] Config loaded successfully
+2024-09-21T20:13:58+03:00 [Info][app] Starting the application
+2024-09-21T20:13:58+03:00 [Info][app] Server started successfully
+2024-09-21T20:13:59+03:00 [Info][app] Request from [::1]:61382: METHOD - GET || PATH - /swagger/index.html
+2024-09-21T20:13:59+03:00 [Info][app] Request from [::1]:61382 completed in 503.6µs
+2024-09-21T20:13:59+03:00 [Info][app] Request from [::1]:61382: METHOD - GET || PATH - /swagger/swagger-ui.css
+2024-09-21T20:13:59+03:00 [Info][app] Request from [::1]:61383: METHOD - GET || PATH - /swagger/swagger-ui-bundle.js
+2024-09-21T20:13:59+03:00 [Info][app] Request from [::1]:61382 completed in 0s
+2024-09-21T20:13:59+03:00 [Info][app] Request from [::1]:61383 completed in 1.0443ms
+2024-09-21T20:13:59+03:00 [Info][app] Request from [::1]:61384: METHOD - GET || PATH - /swagger/swagger-ui-standalone-preset.js
+2024-09-21T20:13:59+03:00 [Info][app] Request from [::1]:61384 completed in 0s
+2024-09-21T20:14:00+03:00 [Info][app] Request from [::1]:61383: METHOD - GET || PATH - /swagger/doc.json
+2024-09-21T20:14:00+03:00 [Info][app] Request from [::1]:61383 completed in 0s
+2024-09-21T20:14:00+03:00 [Info][app] Request from [::1]:61383: METHOD - GET || PATH - /swagger/favicon-32x32.png
+2024-09-21T20:14:00+03:00 [Info][app] Request from [::1]:61383 completed in 0s
+2024-09-21T20:14:09+03:00 [Info][app] Request from [::1]:61391: METHOD - POST || PATH - /user
+2024-09-21T20:14:11+03:00 [Error][app] Request from [::1]:61391 ended with error: internal/userModule/db.go:  create userModule: failed to connect to `user=admin database=appDB`: hostname resolving error: lookup db: no such host
+2024-09-21T20:14:11+03:00 [Info][app] Request from [::1]:61391 completed in 2.7529327s
+2024-09-21T20:18:04+03:00 [Info][app] Request from [::1]:61636: METHOD - GET || PATH - /swagger/swagger-ui.css
+2024-09-21T20:18:04+03:00 [Info][app] Request from [::1]:61636 completed in 505.1µs
+2024-09-21T20:18:04+03:00 [Info][app] Request from [::1]:61636: METHOD - GET || PATH - /swagger/swagger-ui-bundle.js.map
+2024-09-21T20:18:04+03:00 [Info][app] Request from [::1]:61637: METHOD - GET || PATH - /swagger/swagger-ui-standalone-preset.js.map
+2024-09-21T20:18:04+03:00 [Info][app] Request from [::1]:61638: METHOD - GET || PATH - /swagger/swagger-ui.css.map
+2024-09-21T20:18:04+03:00 [Info][app] Request from [::1]:61638 completed in 23.8568ms
+2024-09-21T20:18:04+03:00 [Info][app] Request from [::1]:61637 completed in 27.499ms
+2024-09-21T20:18:04+03:00 [Info][app] Request from [::1]:61636 completed in 31.5928ms
+2024-09-21T20:20:37+03:00 [Info][app] Shutting down the server
+2024-09-21T20:20:42+03:00 [Info][app] Config loaded successfully
+2024-09-21T20:20:42+03:00 [Info][app] Starting the application
+2024-09-21T20:20:42+03:00 [Info][app] Server started successfully
+2024-09-21T20:20:46+03:00 [Info][app] Request from [::1]:62186: METHOD - GET || PATH - /swagger/index.html
+2024-09-21T20:20:46+03:00 [Info][app] Request from [::1]:62186 completed in 0s
+2024-09-21T20:20:46+03:00 [Info][app] Request from [::1]:62186: METHOD - GET || PATH - /swagger/swagger-ui.css
+2024-09-21T20:20:46+03:00 [Info][app] Request from [::1]:62187: METHOD - GET || PATH - /swagger/swagger-ui-bundle.js
+2024-09-21T20:20:46+03:00 [Info][app] Request from [::1]:62186 completed in 0s
+2024-09-21T20:20:46+03:00 [Info][app] Request from [::1]:62188: METHOD - GET || PATH - /swagger/swagger-ui-standalone-preset.js
+2024-09-21T20:20:46+03:00 [Info][app] Request from [::1]:62188 completed in 533.1µs
+2024-09-21T20:20:46+03:00 [Info][app] Request from [::1]:62187 completed in 3.7246ms
+2024-09-21T20:20:46+03:00 [Info][app] Request from [::1]:62187: METHOD - GET || PATH - /swagger/swagger-ui.css.map
+2024-09-21T20:20:46+03:00 [Info][app] Request from [::1]:62187 completed in 27.9019ms
+2024-09-21T20:20:46+03:00 [Info][app] Request from [::1]:62187: METHOD - GET || PATH - /swagger/swagger-ui-bundle.js.map
+2024-09-21T20:20:46+03:00 [Info][app] Request from [::1]:62187 completed in 1.5867ms
+2024-09-21T20:20:46+03:00 [Info][app] Request from [::1]:62187: METHOD - GET || PATH - /swagger/swagger-ui-standalone-preset.js.map
+2024-09-21T20:20:46+03:00 [Info][app] Request from [::1]:62187 completed in 0s
+2024-09-21T20:20:46+03:00 [Info][app] Request from [::1]:62187: METHOD - GET || PATH - /swagger/doc.json
+2024-09-21T20:20:46+03:00 [Info][app] Request from [::1]:62187 completed in 0s
+2024-09-21T20:20:46+03:00 [Info][app] Request from [::1]:62187: METHOD - GET || PATH - /swagger/favicon-32x32.png
+2024-09-21T20:20:46+03:00 [Info][app] Request from [::1]:62187 completed in 512.1µs
+2024-09-21T20:21:35+03:00 [Info][app] Shutting down the server
+2024-09-21T20:21:41+03:00 [Info][app] Config loaded successfully
+2024-09-21T20:21:41+03:00 [Info][app] Starting the application
+2024-09-21T20:21:41+03:00 [Info][app] Server started successfully
+2024-09-21T20:21:44+03:00 [Info][app] Request from [::1]:62257: METHOD - GET || PATH - /swagger/index.html
+2024-09-21T20:21:44+03:00 [Info][app] Request from [::1]:62257 completed in 0s
+2024-09-21T20:21:44+03:00 [Info][app] Request from [::1]:62257: METHOD - GET || PATH - /swagger/swagger-ui.css
+2024-09-21T20:21:44+03:00 [Info][app] Request from [::1]:62257 completed in 0s
+2024-09-21T20:21:44+03:00 [Info][app] Request from [::1]:62258: METHOD - GET || PATH - /swagger/swagger-ui-bundle.js
+2024-09-21T20:21:44+03:00 [Info][app] Request from [::1]:62259: METHOD - GET || PATH - /swagger/swagger-ui-standalone-preset.js
+2024-09-21T20:21:44+03:00 [Info][app] Request from [::1]:62259 completed in 503.9µs
+2024-09-21T20:21:44+03:00 [Info][app] Request from [::1]:62258 completed in 2.6811ms
+2024-09-21T20:21:44+03:00 [Info][app] Request from [::1]:62258: METHOD - GET || PATH - /swagger/swagger-ui.css.map
+2024-09-21T20:21:44+03:00 [Info][app] Request from [::1]:62258 completed in 24.243ms
+2024-09-21T20:21:44+03:00 [Info][app] Request from [::1]:62258: METHOD - GET || PATH - /swagger/swagger-ui-bundle.js.map
+2024-09-21T20:21:44+03:00 [Info][app] Request from [::1]:62258 completed in 1.6046ms
+2024-09-21T20:21:44+03:00 [Info][app] Request from [::1]:62258: METHOD - GET || PATH - /swagger/doc.json
+2024-09-21T20:21:44+03:00 [Info][app] Request from [::1]:62258 completed in 0s
+2024-09-21T20:21:44+03:00 [Info][app] Request from [::1]:62259: METHOD - GET || PATH - /swagger/favicon-32x32.png
+2024-09-21T20:21:44+03:00 [Info][app] Request from [::1]:62259 completed in 0s
+2024-09-21T20:21:44+03:00 [Info][app] Request from [::1]:62259: METHOD - GET || PATH - /swagger/swagger-ui-standalone-preset.js.map
+2024-09-21T20:21:44+03:00 [Info][app] Request from [::1]:62259 completed in 807.9µs
+2024-09-21T20:23:35+03:00 [Info][app] Shutting down the server
+2024-09-21T20:24:23+03:00 [Info][app] Config loaded successfully
+2024-09-21T20:24:23+03:00 [Info][app] Starting the application
+2024-09-21T20:24:23+03:00 [Info][app] Server started successfully
+2024-09-21T20:24:26+03:00 [Info][app] Request from [::1]:62522: METHOD - GET || PATH - /swagger/index.html
+2024-09-21T20:24:26+03:00 [Info][app] Request from [::1]:62522 completed in 521µs
+2024-09-21T20:24:26+03:00 [Info][app] Request from [::1]:62522: METHOD - GET || PATH - /swagger/swagger-ui.css
+2024-09-21T20:24:26+03:00 [Info][app] Request from [::1]:62522 completed in 0s
+2024-09-21T20:24:26+03:00 [Info][app] Request from [::1]:62523: METHOD - GET || PATH - /swagger/swagger-ui-bundle.js
+2024-09-21T20:24:26+03:00 [Info][app] Request from [::1]:62524: METHOD - GET || PATH - /swagger/swagger-ui-standalone-preset.js
+2024-09-21T20:24:26+03:00 [Info][app] Request from [::1]:62524 completed in 602.6µs
+2024-09-21T20:24:26+03:00 [Info][app] Request from [::1]:62523 completed in 4.4261ms
+2024-09-21T20:24:26+03:00 [Info][app] Request from [::1]:62523: METHOD - GET || PATH - /swagger/swagger-ui.css.map
+2024-09-21T20:24:26+03:00 [Info][app] Request from [::1]:62523 completed in 25.5983ms
+2024-09-21T20:24:26+03:00 [Info][app] Request from [::1]:62523: METHOD - GET || PATH - /swagger/swagger-ui-bundle.js.map
+2024-09-21T20:24:26+03:00 [Info][app] Request from [::1]:62523 completed in 1.4089ms
+2024-09-21T20:24:26+03:00 [Info][app] Request from [::1]:62523: METHOD - GET || PATH - /swagger/swagger-ui-standalone-preset.js.map
+2024-09-21T20:24:26+03:00 [Info][app] Request from [::1]:62523 completed in 0s
+2024-09-21T20:24:26+03:00 [Info][app] Request from [::1]:62523: METHOD - GET || PATH - /swagger/doc.json
+2024-09-21T20:24:26+03:00 [Info][app] Request from [::1]:62523 completed in 0s
+2024-09-21T20:24:26+03:00 [Info][app] Request from [::1]:62523: METHOD - GET || PATH - /swagger/favicon-32x32.png
+2024-09-21T20:24:26+03:00 [Info][app] Request from [::1]:62523 completed in 0s
+2024-09-21T20:24:32+03:00 [Info][app] Shutting down the server
+2024-09-21T20:35:35+03:00 [Info][app] Config loaded successfully
+2024-09-21T20:35:35+03:00 [Info][app] Starting the application
+2024-09-21T20:35:35+03:00 [Info][app] Server started successfully
+2024-09-21T20:35:38+03:00 [Info][app] Request from [::1]:64032: METHOD - GET || PATH - /swagger/index.html
+2024-09-21T20:35:38+03:00 [Info][app] Request from [::1]:64032 completed in 503.3µs
+2024-09-21T20:35:38+03:00 [Info][app] Request from [::1]:64032: METHOD - GET || PATH - /swagger/swagger-ui.css
+2024-09-21T20:35:38+03:00 [Info][app] Request from [::1]:64032 completed in 0s
+2024-09-21T20:35:38+03:00 [Info][app] Request from [::1]:64033: METHOD - GET || PATH - /swagger/swagger-ui-bundle.js
+2024-09-21T20:35:38+03:00 [Info][app] Request from [::1]:64034: METHOD - GET || PATH - /swagger/swagger-ui-standalone-preset.js
+2024-09-21T20:35:38+03:00 [Info][app] Request from [::1]:64034 completed in 710.7µs
+2024-09-21T20:35:38+03:00 [Info][app] Request from [::1]:64033 completed in 3.9236ms
+2024-09-21T20:35:38+03:00 [Info][app] Request from [::1]:64033: METHOD - GET || PATH - /swagger/swagger-ui.css.map
+2024-09-21T20:35:38+03:00 [Info][app] Request from [::1]:64033 completed in 26.4955ms
+2024-09-21T20:35:38+03:00 [Info][app] Request from [::1]:64033: METHOD - GET || PATH - /swagger/swagger-ui-bundle.js.map
+2024-09-21T20:35:38+03:00 [Info][app] Request from [::1]:64033 completed in 1.3086ms
+2024-09-21T20:35:38+03:00 [Info][app] Request from [::1]:64033: METHOD - GET || PATH - /swagger/swagger-ui-standalone-preset.js.map
+2024-09-21T20:35:38+03:00 [Info][app] Request from [::1]:64033 completed in 506.1µs
+2024-09-21T20:35:38+03:00 [Info][app] Request from [::1]:64033: METHOD - GET || PATH - /swagger/doc.json
+2024-09-21T20:35:38+03:00 [Info][app] Request from [::1]:64033 completed in 0s
+2024-09-21T20:35:38+03:00 [Info][app] Request from [::1]:64034: METHOD - GET || PATH - /swagger/favicon-32x32.png
+2024-09-21T20:35:38+03:00 [Info][app] Request from [::1]:64034 completed in 0s
+2024-09-21T20:36:44+03:00 [Info][app] Shutting down the server
+2024-09-21T20:36:58+03:00 [Info][app] Config loaded successfully
+2024-09-21T20:36:58+03:00 [Info][app] Starting the application
+2024-09-21T20:36:58+03:00 [Info][app] Server started successfully
+2024-09-21T20:36:59+03:00 [Info][app] Request from [::1]:64150: METHOD - GET || PATH - /swagger/index.html
+2024-09-21T20:36:59+03:00 [Info][app] Request from [::1]:64150 completed in 0s
+2024-09-21T20:36:59+03:00 [Info][app] Request from [::1]:64150: METHOD - GET || PATH - /swagger/swagger-ui.css
+2024-09-21T20:36:59+03:00 [Info][app] Request from [::1]:64150 completed in 999.9µs
+2024-09-21T20:36:59+03:00 [Info][app] Request from [::1]:64151: METHOD - GET || PATH - /swagger/swagger-ui-bundle.js
+2024-09-21T20:36:59+03:00 [Info][app] Request from [::1]:64152: METHOD - GET || PATH - /swagger/swagger-ui-standalone-preset.js
+2024-09-21T20:36:59+03:00 [Info][app] Request from [::1]:64152 completed in 517.2µs
+2024-09-21T20:36:59+03:00 [Info][app] Request from [::1]:64151 completed in 2.7913ms
+2024-09-21T20:36:59+03:00 [Info][app] Request from [::1]:64151: METHOD - GET || PATH - /swagger/swagger-ui.css.map
+2024-09-21T20:36:59+03:00 [Info][app] Request from [::1]:64151 completed in 24.7994ms
+2024-09-21T20:36:59+03:00 [Info][app] Request from [::1]:64151: METHOD - GET || PATH - /swagger/swagger-ui-bundle.js.map
+2024-09-21T20:36:59+03:00 [Info][app] Request from [::1]:64151 completed in 1.7793ms
+2024-09-21T20:36:59+03:00 [Info][app] Request from [::1]:64151: METHOD - GET || PATH - /swagger/swagger-ui-standalone-preset.js.map
+2024-09-21T20:36:59+03:00 [Info][app] Request from [::1]:64151 completed in 0s
+2024-09-21T20:36:59+03:00 [Info][app] Request from [::1]:64151: METHOD - GET || PATH - /swagger/doc.json
+2024-09-21T20:36:59+03:00 [Info][app] Request from [::1]:64151 completed in 0s
+2024-09-21T20:36:59+03:00 [Info][app] Request from [::1]:64151: METHOD - GET || PATH - /swagger/favicon-32x32.png
+2024-09-21T20:36:59+03:00 [Info][app] Request from [::1]:64151 completed in 0s
+2024-09-21T20:37:36+03:00 [Info][app] Shutting down the server
+2024-09-21T20:38:22+03:00 [Info][app] Config loaded successfully
+2024-09-21T20:38:22+03:00 [Info][app] Starting the application
+2024-09-21T20:38:22+03:00 [Info][app] Server started successfully
+2024-09-21T20:38:28+03:00 [Info][app] Request from [::1]:64393: METHOD - GET || PATH - /booking
+2024-09-21T20:38:31+03:00 [Error][app] Request from [::1]:64393 ended with error: internal/bookingModule/db.go:  find all bookings: failed to connect to `user=admin database=appDB`: hostname resolving error: lookup db: no such host
+2024-09-21T20:38:31+03:00 [Info][app] Request from [::1]:64393 completed in 2.7018973s
+2024-09-21T20:38:47+03:00 [Info][app] Shutting down the server
+2024-09-21T20:44:58+03:00 [Info][app] Config loaded successfully
+2024-09-21T20:44:58+03:00 [Info][app] Starting the application
+2024-09-21T20:44:58+03:00 [Info][app] Server started successfully
+2024-09-21T20:45:02+03:00 [Info][app] Request from [::1]:65506: METHOD - GET || PATH - /swagger/index.html
+2024-09-21T20:45:02+03:00 [Info][app] Request from [::1]:65506 completed in 533.3µs
+2024-09-21T20:45:02+03:00 [Info][app] Request from [::1]:65506: METHOD - GET || PATH - /swagger/swagger-ui.css
+2024-09-21T20:45:02+03:00 [Info][app] Request from [::1]:65507: METHOD - GET || PATH - /swagger/swagger-ui-bundle.js
+2024-09-21T20:45:02+03:00 [Info][app] Request from [::1]:65506 completed in 0s
+2024-09-21T20:45:02+03:00 [Info][app] Request from [::1]:65508: METHOD - GET || PATH - /swagger/swagger-ui-standalone-preset.js
+2024-09-21T20:45:02+03:00 [Info][app] Request from [::1]:65508 completed in 0s
+2024-09-21T20:45:02+03:00 [Info][app] Request from [::1]:65507 completed in 2.6ms
+2024-09-21T20:45:02+03:00 [Info][app] Request from [::1]:65507: METHOD - GET || PATH - /swagger/swagger-ui.css.map
+2024-09-21T20:45:02+03:00 [Info][app] Request from [::1]:65507 completed in 28.134ms
+2024-09-21T20:45:02+03:00 [Info][app] Request from [::1]:65507: METHOD - GET || PATH - /swagger/swagger-ui-bundle.js.map
+2024-09-21T20:45:02+03:00 [Info][app] Request from [::1]:65507 completed in 1.7746ms
+2024-09-21T20:45:02+03:00 [Info][app] Request from [::1]:65507: METHOD - GET || PATH - /swagger/swagger-ui-standalone-preset.js.map
+2024-09-21T20:45:02+03:00 [Info][app] Request from [::1]:65507 completed in 0s
+2024-09-21T20:45:02+03:00 [Info][app] Request from [::1]:65507: METHOD - GET || PATH - /swagger/doc.json
+2024-09-21T20:45:02+03:00 [Info][app] Request from [::1]:65508: METHOD - GET || PATH - /swagger/favicon-32x32.png
+2024-09-21T20:45:02+03:00 [Info][app] Request from [::1]:65508 completed in 0s
+2024-09-21T20:45:02+03:00 [Info][app] Request from [::1]:65507 completed in 503.9µs
+2024-09-21T20:45:12+03:00 [Info][app] Request from [::1]:65521: METHOD - GET || PATH - /swagger/index.html
+2024-09-21T20:45:12+03:00 [Info][app] Request from [::1]:65521 completed in 0s
+2024-09-21T20:45:12+03:00 [Info][app] Request from [::1]:65521: METHOD - GET || PATH - /swagger/swagger-ui.css
+2024-09-21T20:45:12+03:00 [Info][app] Request from [::1]:65521 completed in 0s
+2024-09-21T20:45:12+03:00 [Info][app] Request from [::1]:65521: METHOD - GET || PATH - /swagger/swagger-ui-bundle.js
+2024-09-21T20:45:12+03:00 [Info][app] Request from [::1]:65521 completed in 0s
+2024-09-21T20:45:12+03:00 [Info][app] Request from [::1]:65522: METHOD - GET || PATH - /swagger/swagger-ui-standalone-preset.js
+2024-09-21T20:45:12+03:00 [Info][app] Request from [::1]:65522 completed in 0s
+2024-09-21T20:45:12+03:00 [Info][app] Request from [::1]:65522: METHOD - GET || PATH - /swagger/swagger-ui.css.map
+2024-09-21T20:45:12+03:00 [Info][app] Request from [::1]:65522 completed in 0s
+2024-09-21T20:45:12+03:00 [Info][app] Request from [::1]:65522: METHOD - GET || PATH - /swagger/swagger-ui-bundle.js.map
+2024-09-21T20:45:12+03:00 [Info][app] Request from [::1]:65522 completed in 0s
+2024-09-21T20:45:12+03:00 [Info][app] Request from [::1]:65522: METHOD - GET || PATH - /swagger/swagger-ui-standalone-preset.js.map
+2024-09-21T20:45:12+03:00 [Info][app] Request from [::1]:65522 completed in 0s
+2024-09-21T20:45:12+03:00 [Info][app] Request from [::1]:65522: METHOD - GET || PATH - /swagger/doc.json
+2024-09-21T20:45:12+03:00 [Info][app] Request from [::1]:65522 completed in 0s
+2024-09-21T20:45:12+03:00 [Info][app] Request from [::1]:65522: METHOD - GET || PATH - /swagger/favicon-32x32.png
+2024-09-21T20:45:12+03:00 [Info][app] Request from [::1]:65522 completed in 0s
+2024-09-21T20:45:29+03:00 [Info][app] Shutting down the server
+2024-09-21T20:45:33+03:00 [Info][app] Config loaded successfully
+2024-09-21T20:45:33+03:00 [Info][app] Starting the application
+2024-09-21T20:45:33+03:00 [Info][app] Server started successfully
+2024-09-21T20:45:34+03:00 [Info][app] Request from [::1]:49163: METHOD - GET || PATH - /swagger/index.html
+2024-09-21T20:45:34+03:00 [Info][app] Request from [::1]:49163 completed in 504.7µs
+2024-09-21T20:45:34+03:00 [Info][app] Request from [::1]:49163: METHOD - GET || PATH - /swagger/swagger-ui.css
+2024-09-21T20:45:34+03:00 [Info][app] Request from [::1]:49163 completed in 505.2µs
+2024-09-21T20:45:34+03:00 [Info][app] Request from [::1]:49164: METHOD - GET || PATH - /swagger/swagger-ui-bundle.js
+2024-09-21T20:45:34+03:00 [Info][app] Request from [::1]:49165: METHOD - GET || PATH - /swagger/swagger-ui-standalone-preset.js
+2024-09-21T20:45:34+03:00 [Info][app] Request from [::1]:49165 completed in 515.9µs
+2024-09-21T20:45:34+03:00 [Info][app] Request from [::1]:49164 completed in 3.3684ms
+2024-09-21T20:45:34+03:00 [Info][app] Request from [::1]:49164: METHOD - GET || PATH - /swagger/swagger-ui.css.map
+2024-09-21T20:45:34+03:00 [Info][app] Request from [::1]:49164 completed in 21.9449ms
+2024-09-21T20:45:34+03:00 [Info][app] Request from [::1]:49164: METHOD - GET || PATH - /swagger/swagger-ui-bundle.js.map
+2024-09-21T20:45:34+03:00 [Info][app] Request from [::1]:49164 completed in 1.4567ms
+2024-09-21T20:45:35+03:00 [Info][app] Request from [::1]:49164: METHOD - GET || PATH - /swagger/doc.json
+2024-09-21T20:45:35+03:00 [Info][app] Request from [::1]:49164 completed in 0s
+2024-09-21T20:45:35+03:00 [Info][app] Request from [::1]:49165: METHOD - GET || PATH - /swagger/favicon-32x32.png
+2024-09-21T20:45:35+03:00 [Info][app] Request from [::1]:49165 completed in 0s
+2024-09-21T20:45:35+03:00 [Info][app] Request from [::1]:49165: METHOD - GET || PATH - /swagger/swagger-ui-standalone-preset.js.map
+2024-09-21T20:45:35+03:00 [Info][app] Request from [::1]:49165 completed in 1.0149ms
+2024-09-21T20:46:50+03:00 [Info][app] Shutting down the server
+2024-09-21T20:47:00+03:00 [Info][app] Config loaded successfully
+2024-09-21T20:47:00+03:00 [Info][app] Starting the application
+2024-09-21T20:47:00+03:00 [Info][app] Server started successfully
+2024-09-21T20:47:01+03:00 [Info][app] Request from [::1]:49273: METHOD - GET || PATH - /swagger/index.html
+2024-09-21T20:47:01+03:00 [Info][app] Request from [::1]:49273 completed in 0s
+2024-09-21T20:47:01+03:00 [Info][app] Request from [::1]:49273: METHOD - GET || PATH - /swagger/swagger-ui.css
+2024-09-21T20:47:01+03:00 [Info][app] Request from [::1]:49273 completed in 1.5045ms
+2024-09-21T20:47:01+03:00 [Info][app] Request from [::1]:49274: METHOD - GET || PATH - /swagger/swagger-ui-bundle.js
+2024-09-21T20:47:01+03:00 [Info][app] Request from [::1]:49275: METHOD - GET || PATH - /swagger/swagger-ui-standalone-preset.js
+2024-09-21T20:47:01+03:00 [Info][app] Request from [::1]:49275 completed in 0s
+2024-09-21T20:47:01+03:00 [Info][app] Request from [::1]:49274 completed in 4.6006ms
+2024-09-21T20:47:01+03:00 [Info][app] Request from [::1]:49274: METHOD - GET || PATH - /swagger/swagger-ui.css.map
+2024-09-21T20:47:01+03:00 [Info][app] Request from [::1]:49274 completed in 24.8991ms
+2024-09-21T20:47:01+03:00 [Info][app] Request from [::1]:49274: METHOD - GET || PATH - /swagger/swagger-ui-bundle.js.map
+2024-09-21T20:47:01+03:00 [Info][app] Request from [::1]:49274 completed in 2.0169ms
+2024-09-21T20:47:01+03:00 [Info][app] Request from [::1]:49274: METHOD - GET || PATH - /swagger/doc.json
+2024-09-21T20:47:01+03:00 [Info][app] Request from [::1]:49274 completed in 0s
+2024-09-21T20:47:01+03:00 [Info][app] Request from [::1]:49274: METHOD - GET || PATH - /swagger/favicon-32x32.png
+2024-09-21T20:47:01+03:00 [Info][app] Request from [::1]:49274 completed in 0s
+2024-09-21T20:47:01+03:00 [Info][app] Request from [::1]:49274: METHOD - GET || PATH - /swagger/swagger-ui-standalone-preset.js.map
+2024-09-21T20:47:01+03:00 [Info][app] Request from [::1]:49274 completed in 0s
+2024-09-21T20:47:03+03:00 [Info][app] Shutting down the server

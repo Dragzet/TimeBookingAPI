@@ -16,6 +16,48 @@ const docTemplate = `{
     "basePath": "{{.BasePath}}",
     "paths": {
         "/booking": {
+            "get": {
+                "description": "Get a booking by its ID",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "booking"
+                ],
+                "summary": "Find a booking",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Username",
+                        "name": "username",
+                        "in": "query",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Booking details",
+                        "schema": {
+                            "$ref": "#/definitions/handlers.OKBookingAnswer"
+                        }
+                    },
+                    "400": {
+                        "description": "Booking not found",
+                        "schema": {
+                            "$ref": "#/definitions/handlers.BadAnswer"
+                        }
+                    },
+                    "500": {
+                        "description": "Internal server error",
+                        "schema": {
+                            "$ref": "#/definitions/handlers.BadServerAnswer"
+                        }
+                    }
+                }
+            },
             "post": {
                 "description": "Create a new booking with the provided details",
                 "consumes": [
@@ -40,66 +82,22 @@ const docTemplate = `{
                     }
                 ],
                 "responses": {
-                    "201": {
-                        "description": "Created",
+                    "200": {
+                        "description": "Booking created",
                         "schema": {
-                            "$ref": "#/definitions/handlers.Answer"
+                            "$ref": "#/definitions/handlers.OKAnswer"
                         }
                     },
                     "400": {
                         "description": "Invalid input",
                         "schema": {
-                            "$ref": "#/definitions/handlers.Answer"
+                            "$ref": "#/definitions/handlers.BadAnswer"
                         }
                     },
                     "500": {
                         "description": "Internal server error",
                         "schema": {
-                            "$ref": "#/definitions/handlers.Answer"
-                        }
-                    }
-                }
-            }
-        },
-        "/booking/{id}": {
-            "get": {
-                "description": "Get a booking by its ID",
-                "consumes": [
-                    "application/json"
-                ],
-                "produces": [
-                    "application/json"
-                ],
-                "tags": [
-                    "booking"
-                ],
-                "summary": "Find a booking",
-                "parameters": [
-                    {
-                        "type": "integer",
-                        "description": "Booking ID",
-                        "name": "id",
-                        "in": "path",
-                        "required": true
-                    }
-                ],
-                "responses": {
-                    "200": {
-                        "description": "Booking details",
-                        "schema": {
-                            "$ref": "#/definitions/handlers.Answer"
-                        }
-                    },
-                    "404": {
-                        "description": "Booking not found",
-                        "schema": {
-                            "$ref": "#/definitions/handlers.Answer"
-                        }
-                    },
-                    "500": {
-                        "description": "Internal server error",
-                        "schema": {
-                            "$ref": "#/definitions/handlers.Answer"
+                            "$ref": "#/definitions/handlers.BadServerAnswer"
                         }
                     }
                 }
@@ -126,22 +124,22 @@ const docTemplate = `{
                     }
                 ],
                 "responses": {
-                    "204": {
-                        "description": "No content",
+                    "200": {
+                        "description": "Booking deleted",
                         "schema": {
-                            "$ref": "#/definitions/handlers.Answer"
+                            "$ref": "#/definitions/handlers.OKAnswer"
                         }
                     },
                     "404": {
                         "description": "Booking not found",
                         "schema": {
-                            "$ref": "#/definitions/handlers.Answer"
+                            "$ref": "#/definitions/handlers.BadAnswer"
                         }
                     },
                     "500": {
                         "description": "Internal server error",
                         "schema": {
-                            "$ref": "#/definitions/handlers.Answer"
+                            "$ref": "#/definitions/handlers.BadServerAnswer"
                         }
                     }
                 }
@@ -172,28 +170,26 @@ const docTemplate = `{
                     }
                 ],
                 "responses": {
-                    "201": {
-                        "description": "Created",
+                    "200": {
+                        "description": "User created",
                         "schema": {
-                            "$ref": "#/definitions/handlers.Answer"
+                            "$ref": "#/definitions/handlers.OKAnswer"
                         }
                     },
                     "400": {
                         "description": "Invalid input",
                         "schema": {
-                            "$ref": "#/definitions/handlers.Answer"
+                            "$ref": "#/definitions/handlers.BadAnswer"
                         }
                     },
                     "500": {
                         "description": "Internal server error",
                         "schema": {
-                            "$ref": "#/definitions/handlers.Answer"
+                            "$ref": "#/definitions/handlers.BadServerAnswer"
                         }
                     }
                 }
-            }
-        },
-        "/user/{id}": {
+            },
             "delete": {
                 "description": "Delete a user by their ID",
                 "consumes": [
@@ -208,30 +204,30 @@ const docTemplate = `{
                 "summary": "Delete a user",
                 "parameters": [
                     {
-                        "type": "integer",
-                        "description": "User ID",
-                        "name": "id",
-                        "in": "path",
+                        "type": "string",
+                        "description": "Username",
+                        "name": "username",
+                        "in": "query",
                         "required": true
                     }
                 ],
                 "responses": {
-                    "204": {
-                        "description": "No content",
+                    "200": {
+                        "description": "User deleted",
                         "schema": {
-                            "$ref": "#/definitions/handlers.Answer"
+                            "$ref": "#/definitions/handlers.OKAnswer"
                         }
                     },
                     "404": {
                         "description": "User not found",
                         "schema": {
-                            "$ref": "#/definitions/handlers.Answer"
+                            "$ref": "#/definitions/handlers.BadAnswer"
                         }
                     },
                     "500": {
                         "description": "Internal server error",
                         "schema": {
-                            "$ref": "#/definitions/handlers.Answer"
+                            "$ref": "#/definitions/handlers.BadServerAnswer"
                         }
                     }
                 }
@@ -243,35 +239,70 @@ const docTemplate = `{
             "type": "object",
             "properties": {
                 "delta": {
-                    "description": "Длительность бронирования (например, в минутах)",
                     "type": "integer"
                 },
-                "endTime": {
-                    "description": "Время окончания бронирования",
-                    "type": "string"
-                },
-                "id": {
-                    "description": "Уникальный идентификатор бронирования",
-                    "type": "string"
-                },
-                "startTime": {
-                    "description": "Время начала бронирования",
-                    "type": "string"
-                },
                 "username": {
-                    "description": "Имя пользователя, сделавшего бронирование",
                     "type": "string"
                 }
             }
         },
+		"handlers.OKAnswer": {
+					"type": "object",
+					"properties": {
+						"data": {
+							"type": "object",
+							"example": ""
+						},
+						"status": {
+							"type": "integer",
+							"example": 200
+						}
+					}
+				},
+		"handlers.BadAnswer": {
+					"type": "object",
+					"properties": {
+						"data": {
+							"type": "object",
+							"example": ""
+						},
+						"status": {
+							"type": "integer",
+							"example": 400
+						}
+					}
+				},
+		"handlers.BadServerAnswer": {
+					"type": "object",
+					"properties": {
+						"data": {
+							"type": "object",
+							"example": ""
+						},
+						"status": {
+							"type": "integer",
+							"example": 500
+						}
+					}
+				},
+		"handlers.OKBookingAnswer": {
+					"type": "object",
+					"properties": {
+						"data": {
+							"type": "object",
+							"example": "[{id: 1, username: 'user1', startTime: '2021-01-01T00:00:00Z', endTime: '2021-01-01T01:00:00Z', delta: 0}]"
+						},
+						"status": {
+							"type": "integer",
+							"example": 200
+						}
+					}
+				},
         "handlers.Answer": {
             "type": "object",
             "properties": {
-                "data": {
-                    "description": "Данные ответа"
-                },
+                "data": {},
                 "status": {
-                    "description": "Код состояния HTTP",
                     "type": "integer"
                 }
             }
@@ -279,24 +310,10 @@ const docTemplate = `{
         "userModule.UserModel": {
             "type": "object",
             "properties": {
-                "ID": {
-                    "description": "Уникальный идентификатор пользователя",
-                    "type": "string"
-                },
-                "createdAt": {
-                    "description": "Время создания записи пользователя",
-                    "type": "string"
-                },
                 "password": {
-                    "description": "Пароль пользователя (в идеале, храните в хешированном виде)",
-                    "type": "string"
-                },
-                "updatedAt": {
-                    "description": "Время последнего обновления записи пользователя",
                     "type": "string"
                 },
                 "username": {
-                    "description": "Имя пользователя (логин)",
                     "type": "string"
                 }
             }
@@ -306,12 +323,12 @@ const docTemplate = `{
 
 // SwaggerInfo holds exported Swagger Info so clients can modify it
 var SwaggerInfo = &swag.Spec{
-	Version:          "",
-	Host:             "",
-	BasePath:         "",
+	Version:          "1.0",
+	Host:             "localhost:8080",
+	BasePath:         "/",
 	Schemes:          []string{},
-	Title:            "",
-	Description:      "",
+	Title:            "TimeBookingAPI",
+	Description:      "This is a simple API for booking time slots",
 	InfoInstanceName: "swagger",
 	SwaggerTemplate:  docTemplate,
 	LeftDelim:        "{{",
