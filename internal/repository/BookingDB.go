@@ -73,7 +73,7 @@ func (d *DB) BookingDelete(ctx context.Context, id string) error {
 
 func (d *DB) BookingFind(ctx context.Context, id string) (*BookingModel, error) {
 	stmt := `
-		SELECT id, username, start_time, end_time FROM bookings WHERE username = $1
+		SELECT id, username, start_time, end_time FROM bookings WHERE id = $1
 	`
 	var booking BookingModel
 

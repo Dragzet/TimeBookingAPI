@@ -6,7 +6,6 @@ import (
 	"encoding/json"
 )
 
-//go:generate mockgen -source=service.go -destination=mock/mock.go
 type Answer struct {
 	Status int         `json:"status"`
 	Data   interface{} `json:"data"`
