@@ -27,7 +27,7 @@ const docTemplate = `{
                 "tags": [
                     "booking"
                 ],
-                "summary": "BookingFind a booking",
+                "summary": "Find a booking",
                 "parameters": [
                     {
                         "type": "string",
@@ -59,7 +59,7 @@ const docTemplate = `{
                 }
             },
             "post": {
-                "description": "BookingCreate a new booking with the provided details",
+                "description": "Create a new booking with the provided details",
                 "consumes": [
                     "application/json"
                 ],
@@ -69,7 +69,7 @@ const docTemplate = `{
                 "tags": [
                     "booking"
                 ],
-                "summary": "BookingCreate a booking",
+                "summary": "Create a booking",
                 "parameters": [
                     {
                         "description": "Booking data",
@@ -103,7 +103,7 @@ const docTemplate = `{
                 }
             },
             "delete": {
-                "description": "BookingDelete a booking by its ID",
+                "description": "Delete a booking by its ID",
                 "consumes": [
                     "application/json"
                 ],
@@ -113,7 +113,7 @@ const docTemplate = `{
                 "tags": [
                     "booking"
                 ],
-                "summary": "BookingDelete a booking",
+                "summary": "Delete a booking",
                 "parameters": [
                     {
                         "type": "integer",
@@ -147,7 +147,7 @@ const docTemplate = `{
         },
         "/user": {
             "post": {
-                "description": "BookingCreate a new user with the provided information",
+                "description": "Create a new user with the provided information",
                 "consumes": [
                     "application/json"
                 ],
@@ -157,7 +157,7 @@ const docTemplate = `{
                 "tags": [
                     "user"
                 ],
-                "summary": "BookingCreate a user",
+                "summary": "Create a user",
                 "parameters": [
                     {
                         "description": "User data",
@@ -191,7 +191,7 @@ const docTemplate = `{
                 }
             },
             "delete": {
-                "description": "BookingDelete a user by their ID",
+                "description": "Delete a user by their ID",
                 "consumes": [
                     "application/json"
                 ],
@@ -201,7 +201,7 @@ const docTemplate = `{
                 "tags": [
                     "user"
                 ],
-                "summary": "BookingDelete a user",
+                "summary": "Delete a user",
                 "parameters": [
                     {
                         "type": "string",
