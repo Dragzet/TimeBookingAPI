@@ -1,4 +1,4 @@
-storage_path: "postgres://admin:admin@db:5432/appDB?sslmode=disable"
+storage_path: "postgres://admin:admin@localhost:5432/appDB?sslmode=disable"
 logs_path: "logs/app.logs"
 http_server:
   address: "0.0.0.0:8080"

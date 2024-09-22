@@ -1,21 +1,21 @@
 package handlers
 
 import (
-	"TimeBookingAPI/internal/userModule"
+	"TimeBookingAPI/internal/repository"
+	"TimeBookingAPI/internal/service"
 	"encoding/json"
-	"fmt"
 	"io"
 	"net/http"
 )
 
 func (h *Handler) CreateUser(w http.ResponseWriter, r *http.Request) {
 
-	answer := Answer{
+	answer := service.Answer{
 		Status: http.StatusOK,
 	}
 
 	defer func() {
-		w.Write(answer.getJson())
+		w.Write(answer.GetJson())
 	}()
 
 	d, err := io.ReadAll(r.Body)
@@ -25,7 +25,7 @@ func (h *Handler) CreateUser(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	newUser := userModule.New()
+	newUser := repository.NewUserModel()
 	err = json.Unmarshal(d, &newUser)
 	if err != nil {
 		h.LogError(r, err)
@@ -33,37 +33,25 @@ func (h *Handler) CreateUser(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	if len(newUser.Username) < 5 || len(newUser.Password) < 5 || len(newUser.Password) > 72 {
-		h.LogError(r, fmt.Errorf("invalid user data"))
-		answer.Status = http.StatusBadRequest
-		return
-	}
-
-	err = h.userStorage.Create(r.Context(), newUser)
+	answer, err = h.service.CreateUser(r.Context(), newUser)
 	if err != nil {
 		h.LogError(r, err)
-		answer.Status = http.StatusInternalServerError
 		return
 	}
 }
 
 func (h *Handler) DeleteUser(w http.ResponseWriter, r *http.Request) {
-	answer := Answer{
+	answer := service.Answer{
 		Status: http.StatusOK,
 	}
 
 	defer func() {
-		w.Write(answer.getJson())
+		w.Write(answer.GetJson())
 	}()
 
 	username := r.URL.Query().Get("username")
-	if username == "" {
-		h.LogError(r, fmt.Errorf("username is empty"))
-		answer.Status = http.StatusBadRequest
-		return
-	}
 
-	err := h.userStorage.Delete(r.Context(), h.bookingStorage, username)
+	answer, err := h.service.DeleteUser(r.Context(), username)
 	if err != nil {
 		h.LogError(r, err)
 		answer.Status = http.StatusInternalServerError

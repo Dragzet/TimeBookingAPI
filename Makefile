@@ -1,4 +1,4 @@
-.PHONY: build up down
+.PHONY: build up down logs
 
 build:
 	go build -v ./cmd/time-booking
@@ -8,5 +8,8 @@ up:
 
 down:
 	docker-compose down
+
+logs:
+	docker-compose logs -f
 
 .DEFAULT_GOAL := up

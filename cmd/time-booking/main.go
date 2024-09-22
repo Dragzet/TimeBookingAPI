@@ -2,12 +2,12 @@ package main
 
 import (
 	_ "TimeBookingAPI/docs"
-	"TimeBookingAPI/internal/bookingModule"
 	"TimeBookingAPI/internal/config"
 	"TimeBookingAPI/internal/http-server/handlers"
 	MWLogger "TimeBookingAPI/internal/http-server/middleware/logger"
+	"TimeBookingAPI/internal/repository"
+	"TimeBookingAPI/internal/service"
 	"TimeBookingAPI/internal/storage/PostgreSQL"
-	"TimeBookingAPI/internal/userModule"
 	"context"
 	"github.com/go-ozzo/ozzo-log"
 	"github.com/gorilla/mux"
@@ -38,12 +38,13 @@ func main() {
 		os.Exit(1)
 	}
 
-	bookings := bookingModule.NewDB(storage)
-	users := userModule.NewDB(storage)
+	repo := repository.NewDB(storage)
 	router := mux.NewRouter()
 	router.Use(MWLogger.New(logger))
 	router.PathPrefix("/swagger").Handler(httpSwagger.WrapHandler)
-	handler := handlers.NewHandler(router, bookings, users, logger)
+
+	services := service.NewService(repo)
+	handler := handlers.NewHandler(router, services, logger)
 
 	signalChan := make(chan os.Signal, 1)
 	signal.Notify(signalChan, os.Interrupt, syscall.SIGINT, syscall.SIGTERM)

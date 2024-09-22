@@ -1,4 +1,4 @@
-package userModule
+package repository
 
 import (
 	"time"
@@ -12,7 +12,7 @@ type UserModel struct {
 	UpdatedAt time.Time `json:"updatedAt" swaggerignore:"true"`
 }
 
-func New() *UserModel {
+func NewUserModel() *UserModel {
 	return &UserModel{
 		CreatedAt: time.Now(),
 		UpdatedAt: time.Now(),

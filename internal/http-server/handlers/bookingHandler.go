@@ -1,21 +1,20 @@
 package handlers
 
 import (
-	"TimeBookingAPI/internal/bookingModule"
+	"TimeBookingAPI/internal/repository"
+	"TimeBookingAPI/internal/service"
 	"encoding/json"
-	"fmt"
 	"io"
 	"net/http"
-	"time"
 )
 
 func (h *Handler) CreateBooking(w http.ResponseWriter, r *http.Request) {
-	answer := Answer{
+	answer := service.Answer{
 		Status: http.StatusOK,
 	}
 
 	defer func() {
-		w.Write(answer.getJson())
+		w.Write(answer.GetJson())
 	}()
 
 	d, err := io.ReadAll(r.Body)
@@ -25,68 +24,51 @@ func (h *Handler) CreateBooking(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	newBooking := bookingModule.New()
+	newBooking := repository.NewBookingModel()
 	err = json.Unmarshal(d, &newBooking)
-	if err != nil || newBooking.Delta < 1 {
+	if err != nil {
 		h.LogError(r, err)
 		answer.Status = http.StatusBadRequest
 		return
 	}
 
-	newBooking.EndTime = time.Now().Add(time.Hour * time.Duration(newBooking.Delta))
-	err = h.bookingStorage.Create(r.Context(), newBooking)
+	answer, err = h.service.CreateBooking(r.Context(), newBooking)
 	if err != nil {
 		h.LogError(r, err)
-		answer.Status = http.StatusInternalServerError
 		return
 	}
 }
 
 func (h *Handler) FindBooking(w http.ResponseWriter, r *http.Request) {
-	answer := Answer{
+	answer := service.Answer{
 		Status: http.StatusOK,
 	}
 
 	defer func() {
-		w.Write(answer.getJson())
+		w.Write(answer.GetJson())
 	}()
 
 	username := r.URL.Query().Get("username")
-	if username == "" {
-		answer.Status = http.StatusBadRequest
-		return
-	}
-
-	bookings, err := h.bookingStorage.FindAll(r.Context(), username)
+	answer, err := h.service.FindBooking(r.Context(), username)
 	if err != nil {
 		h.LogError(r, err)
-		answer.Status = http.StatusInternalServerError
 		return
 	}
-
-	answer.Data = bookings
 }
 
 func (h *Handler) DeleteBooking(w http.ResponseWriter, r *http.Request) {
-	answer := Answer{
+	answer := service.Answer{
 		Status: http.StatusOK,
 	}
 
 	defer func() {
-		w.Write(answer.getJson())
+		w.Write(answer.GetJson())
 	}()
 
 	id := r.URL.Query().Get("id")
-	if id == "" {
-		h.LogError(r, fmt.Errorf("no id provided"))
-		answer.Status = http.StatusBadRequest
-		return
-	}
-
-	err := h.bookingStorage.Delete(r.Context(), id)
+	answer, err := h.service.DeleteBooking(r.Context(), id)
 	if err != nil {
 		h.LogError(r, err)
-		answer.Status = http.StatusInternalServerError
 		return
 	}
 }

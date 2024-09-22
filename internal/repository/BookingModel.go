@@ -1,4 +1,4 @@
-package bookingModule
+package repository
 
 import "time"
 
@@ -10,7 +10,7 @@ type BookingModel struct {
 	Delta     int       `json:"delta"`
 }
 
-func New() *BookingModel {
+func NewBookingModel() *BookingModel {
 	return &BookingModel{
 		StartTime: time.Now(),
 	}
