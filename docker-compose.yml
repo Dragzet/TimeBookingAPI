@@ -21,14 +21,6 @@ services:
     depends_on:
       - db
     container_name: go_app
-    environment:
-      DB_HOST: db
-      DB_PORT: 5432
-      DB_USER: admin
-      DB_PASSWORD: admin
-      DB_NAME: appDB
-
-
     volumes:
       - ./config/config.yaml:/root/config.yaml
     ports:
