@@ -63,7 +63,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/booking?id=24d4cb24-0977-4d35-926a-722b499e2f8b",
+					"raw": "localhost:8080/booking?id=dad9af50-603c-401a-98ae-f7219930d600",
 					"host": [
 						"localhost"
 					],
@@ -74,7 +74,7 @@
 					"query": [
 						{
 							"key": "id",
-							"value": "24d4cb24-0977-4d35-926a-722b499e2f8b"
+							"value": "dad9af50-603c-401a-98ae-f7219930d600"
 						}
 					]
 				}
