@@ -21,7 +21,7 @@ func (d *DB) BookingCreate(ctx context.Context, booking *BookingModel) error {
 		return fmt.Errorf("%s create bookingModule: %s", bookingDBErrorStatement, err.Error())
 	}
 
-	if err := d.client.QueryRow(ctx, stmt, booking.Username, booking.StartTime, booking.EndTime).Scan(&booking.ID); err != nil {
+	if err := d.Client.QueryRow(ctx, stmt, booking.Username, booking.StartTime, booking.EndTime).Scan(&booking.ID); err != nil {
 		return fmt.Errorf("%s create bookingModule: %s", bookingDBErrorStatement, err.Error())
 	}
 	return nil
@@ -37,7 +37,7 @@ func (d *DB) BookingFindAll(ctx context.Context, username string) ([]*BookingMod
 		return nil, fmt.Errorf("%s find all bookings: %s", bookingDBErrorStatement, err.Error())
 	}
 
-	rows, err := d.client.Query(ctx, stmt)
+	rows, err := d.Client.Query(ctx, stmt)
 	if err != nil {
 		return nil, fmt.Errorf("%s find all bookings: %s", bookingDBErrorStatement, err.Error())
 	}
@@ -65,7 +65,7 @@ func (d *DB) BookingDelete(ctx context.Context, id string) error {
 		return fmt.Errorf("%s delete bookingModule: %s", bookingDBErrorStatement, err.Error())
 	}
 
-	if _, err := d.client.Exec(ctx, stmt, id); err != nil {
+	if _, err := d.Client.Exec(ctx, stmt, id); err != nil {
 		return fmt.Errorf("%s delete bookingModule: %s", bookingDBErrorStatement, err.Error())
 	}
 	return nil
@@ -77,7 +77,7 @@ func (d *DB) BookingFind(ctx context.Context, id string) (*BookingModel, error) 
 	`
 	var booking BookingModel
 
-	err := d.client.QueryRow(ctx, stmt, id).Scan(&booking.ID, &booking.Username, &booking.StartTime, &booking.EndTime)
+	err := d.Client.QueryRow(ctx, stmt, id).Scan(&booking.ID, &booking.Username, &booking.StartTime, &booking.EndTime)
 	if err != nil {
 		return nil, fmt.Errorf("%s find bookingModule: %s", bookingDBErrorStatement, err.Error())
 	}

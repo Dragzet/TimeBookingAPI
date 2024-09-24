@@ -24,5 +24,11 @@ make down
 make build
 ```
 
+***Запуск тестов***:
+
+```
+make tests
+```
+
 ***Swagger***:
 http://localhost:8080/swagger/index.html

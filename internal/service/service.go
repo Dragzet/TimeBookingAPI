@@ -22,6 +22,7 @@ func (answer *Answer) GetJson() []byte {
 type UserService interface {
 	CreateUser(ctx context.Context, user *repository.UserModel) (Answer, error)
 	DeleteUser(ctx context.Context, username string) (Answer, error)
+	TestUserCreate(ctx context.Context, user *repository.UserModel) (Answer, error)
 }
 
 type BookingService interface {

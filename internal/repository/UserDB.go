@@ -27,7 +27,7 @@ func (d DB) UserCreate(ctx context.Context, user *UserModel) error {
 		return fmt.Errorf("%s create hashing userModule: %s", userDBErrorStatement, err.Error())
 	}
 
-	if err := d.client.QueryRow(ctx, stmt, user.Username, hash, user.CreatedAt, user.UpdatedAt).Scan(&user.ID); err != nil {
+	if err := d.Client.QueryRow(ctx, stmt, user.Username, hash, user.CreatedAt, user.UpdatedAt).Scan(&user.ID); err != nil {
 		return fmt.Errorf("%s create userModule: %s", userDBErrorStatement, err.Error())
 	}
 	return nil
@@ -38,8 +38,7 @@ func (d DB) UserFind(ctx context.Context, username string) (*UserModel, error) {
 		SELECT id, username, password, created_at, updated_at FROM users WHERE username = $1
 	`
 	var user UserModel
-
-	err := d.client.QueryRow(ctx, stmt, username).Scan(&user.ID, &user.Username, &user.Password, &user.CreatedAt, &user.UpdatedAt)
+	err := d.Client.QueryRow(ctx, stmt, username).Scan(&user.ID, &user.Username, &user.Password, &user.CreatedAt, &user.UpdatedAt)
 	if err != nil {
 		return nil, fmt.Errorf("%s find userModule: %s", userDBErrorStatement, err.Error())
 	}
@@ -66,8 +65,28 @@ func (d DB) UserDelete(ctx context.Context, username string) error {
 		}
 	}
 
-	if _, err := d.client.Exec(ctx, stmt, user.Username); err != nil {
+	if _, err := d.Client.Exec(ctx, stmt, user.Username); err != nil {
 		return fmt.Errorf("%s delete userModule: %s", userDBErrorStatement, err.Error())
+	}
+	return nil
+}
+
+// create user without hashing password for tests
+func (d DB) TestUserCreate(ctx context.Context, user *UserModel) error {
+	stmt := `
+	INSERT INTO users
+		(username, password, created_at, updated_at)
+	VALUES 
+	    ($1, $2, $3, $4)
+	`
+
+	_, err := d.UserFind(ctx, user.Username)
+	if err != nil {
+		return fmt.Errorf("%s create userModule: user already exists", userDBErrorStatement)
+	}
+
+	if err := d.Client.QueryRow(ctx, stmt, user.Username, user.Password, user.CreatedAt, user.UpdatedAt).Scan(&user.ID); err != nil {
+		return fmt.Errorf("%s create userModule: %s", userDBErrorStatement, err.Error())
 	}
 	return nil
 }
