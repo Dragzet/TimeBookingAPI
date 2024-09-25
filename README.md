@@ -35,5 +35,4 @@ http://localhost:8080/swagger/index.html
 
 ***
 
-### [Примеры Запросов](./docs/RequestsExamples.md)
 ### Postman коллекции с примерами - [Здесь](./docs)
